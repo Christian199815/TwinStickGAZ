@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a4163657d6ecc48a8add0418263c59, type: 3}
+  m_Name: BaseGameWeapons
+  m_EditorClassIdentifier: 
+  weapons:
+  - weaponName: Glock
+    damage: 20
+    ammo: 10
+    shootDelay: 0.2
+    reloadDelay: 1
+    bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 2}
+  - weaponName: SMG
+    damage: 20
+    ammo: 10
+    shootDelay: 0.2
+    reloadDelay: 1
+    bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 2}
