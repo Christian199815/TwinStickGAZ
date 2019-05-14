@@ -7,20 +7,40 @@ ModelImporter:
     100002: Armor
     100004: Health
     100006: //RootNode
+    100008: KeyCard_Blue
+    100010: KeyCard_Green
+    100012: KeyCard_Pink
+    100014: KeyCard_Yellow
     400000: Ammo
     400002: Armor
     400004: Health
     400006: //RootNode
+    400008: KeyCard_Blue
+    400010: KeyCard_Green
+    400012: KeyCard_Pink
+    400014: KeyCard_Yellow
     2100000: Pickups
     2300000: Ammo
     2300002: Armor
     2300004: Health
+    2300006: KeyCard_Blue
+    2300008: KeyCard_Green
+    2300010: KeyCard_Pink
+    2300012: KeyCard_Yellow
     3300000: Ammo
     3300002: Armor
     3300004: Health
+    3300006: KeyCard_Blue
+    3300008: KeyCard_Green
+    3300010: KeyCard_Pink
+    3300012: KeyCard_Yellow
     4300000: Health
     4300002: Ammo
     4300004: Armor
+    4300006: KeyCard_Yellow
+    4300008: KeyCard_Pink
+    4300010: KeyCard_Blue
+    4300012: KeyCard_Green
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -55,6 +75,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -79,6 +100,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -93,7 +117,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
