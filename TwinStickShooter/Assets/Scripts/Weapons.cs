@@ -11,6 +11,9 @@ public class Weapons : ScriptableObject {
 
         public float damage;
         public int ammo;
+        public int curAmmo;
+        public int clip;
+        public int curClip;
 
         public float shootDelay;
         public float reloadDelay;

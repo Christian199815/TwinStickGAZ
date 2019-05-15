@@ -16,8 +16,6 @@ public class AiCharacterScript : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
         GotoNextPoint();
-
-        
     }
 
 
@@ -44,9 +42,4 @@ public class AiCharacterScript : MonoBehaviour
                 GotoNextPoint();
         }
     }
-
-    
-
-
-
 }

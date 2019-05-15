@@ -33,7 +33,7 @@ public class BulletController : MonoBehaviour {
         }
         if(other.transform.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerController>().Health--;
+            other.gameObject.GetComponent<PlayerController>().maxHealth--;
         }
     }
 }

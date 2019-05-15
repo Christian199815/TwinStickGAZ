@@ -15,12 +15,18 @@ MonoBehaviour:
   - weaponName: Glock
     damage: 20
     ammo: 10
+    curAmmo: 0
+    clip: 180
+    curClip: 0
     shootDelay: 0.2
     reloadDelay: 1
     bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 2}
   - weaponName: SMG
     damage: 20
     ammo: 10
+    curAmmo: 0
+    clip: 0
+    curClip: 0
     shootDelay: 0.2
     reloadDelay: 1
     bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 2}
