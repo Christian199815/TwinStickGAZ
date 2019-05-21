@@ -539,7 +539,7 @@ MonoBehaviour:
   Home: {fileID: 2103853502}
   Credits: {fileID: 1161113963}
   LevelSelect: {fileID: 141992698}
-  speed: 0
+  speed: 6
 --- !u!1 &488455524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,7 +2629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1913872442
 Transform:
   m_ObjectHideFlags: 0
@@ -2817,7 +2817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2103853503
 Transform:
   m_ObjectHideFlags: 0
