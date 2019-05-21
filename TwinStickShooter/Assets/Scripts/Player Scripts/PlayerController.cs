@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     public int maxArmor;
     public int currentArmor;
     public bool healthCheat;
+    public List<int> keycards;
 
     //Lerp Variables
     private float lerpHealth;
