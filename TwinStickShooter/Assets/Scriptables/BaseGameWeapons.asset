@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponPickupPrefab: {fileID: 7124417605490329945, guid: e8bb737f3e4fb064c8c13530aadc3acb,
     type: 3}
   weapons:
-  - weaponName: Empty
+  - weaponName: Nothing
     damage: 0
     maxAmmo: 0
     curAmmo: 0
