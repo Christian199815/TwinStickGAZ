@@ -10,7 +10,7 @@ public class AmmoPickup : MonoBehaviour {
 
         if (player != null)
         {
-            player.currentWeapon.curClip += player.currentWeapon.ammo * 3;
+            player.currentWeapon.curClip += player.currentWeapon.maxAmmo * 3;
             Destroy(gameObject);
         }
     }

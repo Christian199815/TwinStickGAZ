@@ -1,17 +1,68 @@
 fileFormatVersion: 2
-guid: b202a02cf5b40a54db6c7c652ab1f2ed
+guid: f6f884c5008048d4eabc5c9c48926080
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert4
-    2300000: polySurface120
-    2300002: //RootNode
-    3300000: polySurface120
-    3300002: //RootNode
-    4300000: polySurface120
-    4300002: doorframe
+    100000: Body_Maid
+    100002: Body_Maid 1
+    100004: //RootNode
+    100006: Fist_Maid
+    100008: group1
+    100010: group1_Body_Maid
+    100012: Head_Maid
+    100014: Maid_Robot
+    100016: pSphere3
+    100018: pSphere4
+    100020: pSphere5
+    100022: pSphere6
+    100024: Right_arm_Maid
+    100026: Shooting_arm_Maid
+    100028: Shooting_left_arm_Maid
+    100030: transform1
+    100032: transform10
+    100034: transform11
+    100036: transform12
+    100038: transform2
+    100040: transform3
+    100042: transform4
+    100044: transform5
+    100046: transform6
+    100048: transform7
+    100050: transform8
+    100052: transform9
+    400000: Body_Maid
+    400002: Body_Maid 1
+    400004: //RootNode
+    400006: Fist_Maid
+    400008: group1
+    400010: group1_Body_Maid
+    400012: Head_Maid
+    400014: Maid_Robot
+    400016: pSphere3
+    400018: pSphere4
+    400020: pSphere5
+    400022: pSphere6
+    400024: Right_arm_Maid
+    400026: Shooting_arm_Maid
+    400028: Shooting_left_arm_Maid
+    400030: transform1
+    400032: transform10
+    400034: transform11
+    400036: transform12
+    400038: transform2
+    400040: transform3
+    400042: transform4
+    400044: transform5
+    400046: transform6
+    400048: transform7
+    400050: transform8
+    400052: transform9
+    2100000: lambert2
+    2300000: group1_Body_Maid
+    3300000: group1_Body_Maid
+    4300000: group1_Body_Maid
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -64,8 +115,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -92,7 +143,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData:
