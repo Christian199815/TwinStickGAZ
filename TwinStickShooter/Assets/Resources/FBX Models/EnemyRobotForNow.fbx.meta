@@ -1,100 +1,68 @@
 fileFormatVersion: 2
-guid: c1234bc48d66f1e418443dadeedc64d0
+guid: f6f884c5008048d4eabc5c9c48926080
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Beeldscherm
-    100002: kast
-    100004: PC
-    100006: pCube1
-    100008: pCube10
-    100010: pCube11
-    100012: pCube12
-    100014: pCube2
-    100016: pCube3
-    100018: pCube4
-    100020: pCube5
-    100022: pCube6
-    100024: pCube7
-    100026: pCube8
-    100028: pCube9
-    100030: PlankBottom
-    100032: PlankTop
-    100034: Stellage
-    100036: StellageKast
-    100038: //RootNode
-    100040: Toetsenbord
-    100042: transform1
-    100044: transform2
-    100046: transform3
-    100048: transform4
-    100050: transform5
-    100052: transform6
-    100054: transform7
-    100056: transform8
-    400000: Beeldscherm
-    400002: kast
-    400004: PC
-    400006: pCube1
-    400008: pCube10
-    400010: pCube11
-    400012: pCube12
-    400014: pCube2
-    400016: pCube3
-    400018: pCube4
-    400020: pCube5
-    400022: pCube6
-    400024: pCube7
-    400026: pCube8
-    400028: pCube9
-    400030: PlankBottom
-    400032: PlankTop
-    400034: Stellage
-    400036: StellageKast
-    400038: //RootNode
-    400040: Toetsenbord
-    400042: transform1
-    400044: transform2
-    400046: transform3
-    400048: transform4
-    400050: transform5
-    400052: transform6
-    400054: transform7
-    400056: transform8
-    2100000: lambert1
-    2100002: Beeldscherm_Toetsenbord
-    2100004: TextureStellageKast2
-    2100006: Texture_Stellage
-    2300000: Beeldscherm
-    2300002: pCube1
-    2300004: pCube6
-    2300006: pCube7
-    2300008: pCube8
-    2300010: PlankBottom
-    2300012: PlankTop
-    2300014: Stellage
-    2300016: Toetsenbord
-    2300018: //RootNode
-    3300000: Beeldscherm
-    3300002: pCube1
-    3300004: pCube6
-    3300006: pCube7
-    3300008: pCube8
-    3300010: PlankBottom
-    3300012: PlankTop
-    3300014: Stellage
-    3300016: Toetsenbord
-    3300018: //RootNode
-    4300000: pCube1
-    4300002: pCube6
-    4300004: pCube8
-    4300006: pCube7
-    4300008: Beeldscherm
-    4300010: Toetsenbord
-    4300012: PlankTop
-    4300014: Stellage
-    4300016: PlankBottom
-    4300018: pCube20
+    100000: Body_Maid
+    100002: Body_Maid 1
+    100004: //RootNode
+    100006: Fist_Maid
+    100008: group1
+    100010: group1_Body_Maid
+    100012: Head_Maid
+    100014: Maid_Robot
+    100016: pSphere3
+    100018: pSphere4
+    100020: pSphere5
+    100022: pSphere6
+    100024: Right_arm_Maid
+    100026: Shooting_arm_Maid
+    100028: Shooting_left_arm_Maid
+    100030: transform1
+    100032: transform10
+    100034: transform11
+    100036: transform12
+    100038: transform2
+    100040: transform3
+    100042: transform4
+    100044: transform5
+    100046: transform6
+    100048: transform7
+    100050: transform8
+    100052: transform9
+    400000: Body_Maid
+    400002: Body_Maid 1
+    400004: //RootNode
+    400006: Fist_Maid
+    400008: group1
+    400010: group1_Body_Maid
+    400012: Head_Maid
+    400014: Maid_Robot
+    400016: pSphere3
+    400018: pSphere4
+    400020: pSphere5
+    400022: pSphere6
+    400024: Right_arm_Maid
+    400026: Shooting_arm_Maid
+    400028: Shooting_left_arm_Maid
+    400030: transform1
+    400032: transform10
+    400034: transform11
+    400036: transform12
+    400038: transform2
+    400040: transform3
+    400042: transform4
+    400044: transform5
+    400046: transform6
+    400048: transform7
+    400050: transform8
+    400052: transform9
+    2100000: lambert2
+    2300000: group1_Body_Maid
+    3300000: group1_Body_Maid
+    4300000: group1_Body_Maid
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -147,8 +115,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -175,7 +143,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

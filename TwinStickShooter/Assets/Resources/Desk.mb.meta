@@ -1,100 +1,32 @@
 fileFormatVersion: 2
-guid: c1234bc48d66f1e418443dadeedc64d0
+guid: 15099b14cac6ea04fb4f050ae5621fcd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Beeldscherm
-    100002: kast
-    100004: PC
-    100006: pCube1
-    100008: pCube10
-    100010: pCube11
-    100012: pCube12
-    100014: pCube2
-    100016: pCube3
-    100018: pCube4
-    100020: pCube5
-    100022: pCube6
-    100024: pCube7
-    100026: pCube8
-    100028: pCube9
-    100030: PlankBottom
-    100032: PlankTop
-    100034: Stellage
-    100036: StellageKast
-    100038: //RootNode
-    100040: Toetsenbord
-    100042: transform1
-    100044: transform2
-    100046: transform3
-    100048: transform4
-    100050: transform5
-    100052: transform6
-    100054: transform7
-    100056: transform8
-    400000: Beeldscherm
-    400002: kast
-    400004: PC
-    400006: pCube1
-    400008: pCube10
-    400010: pCube11
-    400012: pCube12
-    400014: pCube2
-    400016: pCube3
-    400018: pCube4
-    400020: pCube5
-    400022: pCube6
-    400024: pCube7
-    400026: pCube8
-    400028: pCube9
-    400030: PlankBottom
-    400032: PlankTop
-    400034: Stellage
-    400036: StellageKast
-    400038: //RootNode
-    400040: Toetsenbord
-    400042: transform1
-    400044: transform2
-    400046: transform3
-    400048: transform4
-    400050: transform5
-    400052: transform6
-    400054: transform7
-    400056: transform8
+    100000: //RootNode
+    100002: pCube1
+    100004: pCube5
+    100006: pCube6
+    100008: polySurface1
+    400000: //RootNode
+    400002: pCube1
+    400004: pCube5
+    400006: pCube6
+    400008: polySurface1
     2100000: lambert1
-    2100002: Beeldscherm_Toetsenbord
-    2100004: TextureStellageKast2
-    2100006: Texture_Stellage
-    2300000: Beeldscherm
-    2300002: pCube1
+    2100002: lambert5
+    2300000: pCube1
+    2300002: pCube5
     2300004: pCube6
-    2300006: pCube7
-    2300008: pCube8
-    2300010: PlankBottom
-    2300012: PlankTop
-    2300014: Stellage
-    2300016: Toetsenbord
-    2300018: //RootNode
-    3300000: Beeldscherm
-    3300002: pCube1
+    2300006: polySurface1
+    3300000: pCube1
+    3300002: pCube5
     3300004: pCube6
-    3300006: pCube7
-    3300008: pCube8
-    3300010: PlankBottom
-    3300012: PlankTop
-    3300014: Stellage
-    3300016: Toetsenbord
-    3300018: //RootNode
+    3300006: polySurface1
     4300000: pCube1
-    4300002: pCube6
-    4300004: pCube8
-    4300006: pCube7
-    4300008: Beeldscherm
-    4300010: Toetsenbord
-    4300012: PlankTop
-    4300014: Stellage
-    4300016: PlankBottom
-    4300018: pCube20
+    4300002: polySurface1
+    4300004: pCube5
+    4300006: pCube6
   externalObjects: {}
   materials:
     importMaterials: 1
