@@ -493,6 +493,7 @@ ModelImporter:
     100974: transform97
     100976: transform98
     100978: transform99
+    100980: polySurface59
     400000: //RootNode
     400002: pCube100
     400004: pCube101
@@ -983,10 +984,15 @@ ModelImporter:
     400974: transform97
     400976: transform98
     400978: transform99
+    400980: polySurface59
     2100000: lambert2
+    2100002: lambert1
     2300000: polySurface60
+    2300002: polySurface59
     3300000: polySurface60
+    3300002: polySurface59
     4300000: polySurface60
+    4300002: polySurface59
   externalObjects: {}
   materials:
     importMaterials: 1
