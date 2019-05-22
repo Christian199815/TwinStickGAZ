@@ -11,9 +11,9 @@ public class PauseController : MonoBehaviour
     [SerializeField] private KeyCode up;
     [SerializeField] private KeyCode down;
     [SerializeField] private KeyCode Enter;
+    [SerializeField] private int Speed;
 
-    [SerializeField] private GameObject Home;
-    [SerializeField] private GameObject Credits;
+    
     [SerializeField] private GameObject Pause;
 
 
@@ -24,11 +24,14 @@ public class PauseController : MonoBehaviour
 
     void Update()
     {
+        
         LiftSelect();
         FindPosition();
         BeloworAbove();
         ContinueSelection();
     }
+
+    
 
     //input opvragen
     void LiftSelect()
@@ -47,19 +50,19 @@ public class PauseController : MonoBehaviour
     {
         if (position == 0)
         {
-            Lift.position = Vector3.MoveTowards(Lift.position, Select[0].position, 1.5f * Time.deltaTime);
+            Lift.position = Vector3.MoveTowards(Lift.position, Select[0].position, Speed * Time.deltaTime);
         }
         if (position == 1)
         {
-            Lift.position = Vector3.MoveTowards(Lift.position, Select[1].position, 1.5f * Time.deltaTime);
+            Lift.position = Vector3.MoveTowards(Lift.position, Select[1].position, Speed * Time.deltaTime);
         }
         if (position == 2)
         {
-            Lift.position = Vector3.MoveTowards(Lift.position, Select[2].position, 1.5f * Time.deltaTime);
+            Lift.position = Vector3.MoveTowards(Lift.position, Select[2].position, Speed * Time.deltaTime);
         }
         if (position == 3)
         {
-            Lift.position = Vector3.MoveTowards(Lift.position, Select[3].position, 1.5f * Time.deltaTime);
+            Lift.position = Vector3.MoveTowards(Lift.position, Select[3].position, Speed * Time.deltaTime);
         }
        
     }
@@ -87,8 +90,7 @@ public class PauseController : MonoBehaviour
         if (Lift.position == Select[2].position && Input.GetKeyDown(Enter))
         {
             print("options");
-            Credits.SetActive(true);
-            Home.SetActive(false);
+            
             Pause.SetActive(false);
         }
         if (Lift.position == Select[3].position && Input.GetKeyDown(Enter))
