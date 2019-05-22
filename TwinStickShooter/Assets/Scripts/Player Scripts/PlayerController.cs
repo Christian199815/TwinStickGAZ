@@ -46,14 +46,19 @@ public class PlayerController : MonoBehaviour
     private float lerpHealth;
     private float lerpArmor;
 
+    private void Awake()
+    {
+        weapons.SetInstance();
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         gameCamera = Camera.main;
 
         currentWeapon = weapons.weapons[0];
-        currentWeapon.curAmmo = currentWeapon.ammo;
-        currentWeapon.curClip = currentWeapon.clip;
+        currentWeapon.curAmmo = currentWeapon.maxAmmo;
+        currentWeapon.curClip = currentWeapon.startClip;
 
         shootPoint = new GameObject("Shooting Point").transform;
         shootPoint.position = transform.position + shootOffset;
@@ -65,6 +70,8 @@ public class PlayerController : MonoBehaviour
         healthbar = GameObject.Find("Healthbar").transform;
         armorbar = GameObject.Find("Armorbar").transform;
         ammoText = GameObject.Find("Ammo UI").GetComponent<Text>();
+
+        weapons.CreatePickup(1, transform.position);
     }
 
     void FixedUpdate()
@@ -96,13 +103,13 @@ public class PlayerController : MonoBehaviour
                 currentWeapon.curAmmo--;
             }
 
-            if (currentWeapon.curAmmo <= 0 && currentWeapon.curClip >= currentWeapon.ammo)
+            if (currentWeapon.curAmmo <= 0 && currentWeapon.curClip >= currentWeapon.maxAmmo)
             {
-                currentWeapon.curAmmo = currentWeapon.ammo;
-                currentWeapon.curClip -= currentWeapon.ammo;
+                currentWeapon.curAmmo = currentWeapon.maxAmmo;
+                currentWeapon.curClip -= currentWeapon.maxAmmo;
                 reloadTimer = 0;
             }
-            else if(currentWeapon.curAmmo <= 0 && currentWeapon.curClip <= currentWeapon.ammo && currentWeapon.curClip > 0)
+            else if(currentWeapon.curAmmo <= 0 && currentWeapon.curClip <= currentWeapon.maxAmmo && currentWeapon.curClip > 0)
             {
                 ammo = currentWeapon.curClip;
                 currentWeapon.curClip = 0;
@@ -129,7 +136,7 @@ public class PlayerController : MonoBehaviour
         healthbar.localScale = new Vector3((1.0f / maxHealth) * lerpHealth, 1, 1);
         armorbar.localScale = new Vector3((1.0f / maxArmor) * lerpArmor, 1, 1);
 
-        ammoText.text = "Ammo: " + ((reloadTimer < currentWeapon.reloadDelay) ? 0 : currentWeapon.curAmmo) + "/" + currentWeapon.ammo + "  " + currentWeapon.curClip;
+        ammoText.text = "Ammo: " + ((reloadTimer < currentWeapon.reloadDelay) ? 0 : currentWeapon.curAmmo) + "/" + currentWeapon.maxAmmo + "  " + currentWeapon.curClip;
         #endregion
     }
 
@@ -144,6 +151,40 @@ public class PlayerController : MonoBehaviour
         else if(Application.isEditor && Application.isPlaying)
         {
             Gizmos.DrawSphere(shootPoint.position, .05f);
+        }
+    }
+
+    // Functions
+    public bool ChangeWeapon(Weapons.Weapon weapon)
+    {
+        print(weapon.weaponName);
+
+        if(weapon.weaponName == currentWeapon.weaponName)
+        {
+            print("africa");
+
+            if (weapon.startClip + currentWeapon.startClip <= currentWeapon.maxClip)
+            {
+                currentWeapon.startClip += weapon.startClip;
+                return true;
+            }
+            else if(currentWeapon.curClip <= currentWeapon.maxClip)
+            {
+                currentWeapon.startClip = currentWeapon.maxClip;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            if(currentWeapon.weaponName != "Empty")
+                weapons.CreatePickup(currentWeapon, transform.position);
+
+            currentWeapon = weapon;
+            return true;
         }
     }
 }
