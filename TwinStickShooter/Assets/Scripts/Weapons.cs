@@ -14,7 +14,7 @@ public class Weapons : ScriptableObject {
     }
 
     [System.Serializable]
-    public struct Weapon
+    public class Weapon
     {
         public string weaponName;
 
@@ -40,15 +40,21 @@ public class Weapons : ScriptableObject {
         WeaponPickup pickup = obj.transform.GetChild(0).GetComponent<WeaponPickup>();
 
         pickup.weapon = weapons[weaponID];
+        Debug.Log("creating: " + weapons[weaponID].weaponName);
         pickup.weapon.curAmmo = pickup.weapon.maxAmmo;
         pickup.weapon.curClip = pickup.weapon.startClip;
+        Debug.Log("made: " + pickup.weapon.weaponName);
     }
 
-    public void CreatePickup(Weapon weapon, Vector3 position)
+    public void RecreatePickup(Weapon weapon, Vector3 position)
     {
+        Debug.Log("dropping: " + weapon.weaponName);
+
         GameObject obj = Instantiate(weaponPickupPrefab, new Vector3(position.x, 0, position.z), Quaternion.identity);
         WeaponPickup pickup = obj.transform.GetChild(0).GetComponent<WeaponPickup>();
 
+        Debug.Log("creating: " + weapon.weaponName);
         pickup.weapon = weapon;
+        Debug.Log("made: " + pickup.weapon.weaponName);
     }
 }

@@ -77,6 +77,8 @@ public class PlayerController : MonoBehaviour
         armorText = GameObject.Find("Armor Text").GetComponent<Text>();
         ammoText = GameObject.Find("Ammo Text").GetComponent<Text>();
         weaponText = GameObject.Find("Weapon Text").GetComponent<Text>();
+
+        weapons.CreatePickup(2, transform.position);
     }
 
     void FixedUpdate()
@@ -166,6 +168,8 @@ public class PlayerController : MonoBehaviour
     // Functions
     public bool ChangeWeapon(Weapons.Weapon weapon)
     {
+        print(weapon.weaponName);
+
         if(weapon.weaponName == currentWeapon.weaponName)
         {
             if (weapon.startClip + currentWeapon.startClip <= currentWeapon.maxClip)
@@ -180,14 +184,16 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                print("wiwiwiwiwi");
                 return false;
             }
         }
         else
         {
-            if(currentWeapon.weaponName != "Empty")
-                weapons.CreatePickup(currentWeapon, transform.position);
+            if(currentWeapon.weaponName != "Nothing")
+                weapons.RecreatePickup(currentWeapon, transform.position);
 
+            print("burp");
             currentWeapon = weapon;
             return true;
         }
