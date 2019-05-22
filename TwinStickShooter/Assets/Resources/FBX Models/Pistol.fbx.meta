@@ -1,53 +1,15 @@
 fileFormatVersion: 2
-guid: 836ae1551ea94ff418448a634cdfb456
+guid: 9c9250f0519431f43b42cbcd5f7ef4f2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Ammo
-    100002: Armor
-    100004: Health
-    100006: //RootNode
-    100008: KeyCard_Blue
-    100010: KeyCard_Green
-    100012: KeyCard_Pink
-    100014: KeyCard_Yellow
-    100016: Pistol
-    400000: Ammo
-    400002: Armor
-    400004: Health
-    400006: //RootNode
-    400008: KeyCard_Blue
-    400010: KeyCard_Green
-    400012: KeyCard_Pink
-    400014: KeyCard_Yellow
-    400016: Pistol
-    2100000: Pickups
-    2100002: lambert1
-    2100004: Weapons
-    2300000: Ammo
-    2300002: Armor
-    2300004: Health
-    2300006: KeyCard_Blue
-    2300008: KeyCard_Green
-    2300010: KeyCard_Pink
-    2300012: KeyCard_Yellow
-    2300014: Pistol
-    3300000: Ammo
-    3300002: Armor
-    3300004: Health
-    3300006: KeyCard_Blue
-    3300008: KeyCard_Green
-    3300010: KeyCard_Pink
-    3300012: KeyCard_Yellow
-    3300014: Pistol
-    4300000: Health
-    4300002: Ammo
-    4300004: Armor
-    4300006: KeyCard_Yellow
-    4300008: KeyCard_Pink
-    4300010: KeyCard_Blue
-    4300012: KeyCard_Green
-    4300014: Pistol
+    100000: //RootNode
+    400000: //RootNode
+    2100000: lambert1
+    2100002: Weapons
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Pistol
   externalObjects: {}
   materials:
     importMaterials: 1
