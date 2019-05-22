@@ -1,14 +1,70 @@
 fileFormatVersion: 2
-guid: b202a02cf5b40a54db6c7c652ab1f2ed
+guid: 1717e4aea7a9794459b74946b5ae08ea
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert4
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: doorframe
+    100000: Body_Maid
+    100002: Body_Maid 1
+    100004: Fist_Maid
+    100006: group
+    100008: group1
+    100010: group1_Body_Maid
+    100012: Head_Maid
+    100014: Maid_Robot
+    100016: pSphere3
+    100018: pSphere4
+    100020: pSphere5
+    100022: pSphere6
+    100024: Right_arm_Maid
+    100026: //RootNode
+    100028: Shooting_arm_Maid
+    100030: Shooting_left_arm_Maid
+    100032: transform1
+    100034: transform10
+    100036: transform11
+    100038: transform12
+    100040: transform2
+    100042: transform3
+    100044: transform4
+    100046: transform5
+    100048: transform6
+    100050: transform7
+    100052: transform8
+    100054: transform9
+    400000: Body_Maid
+    400002: Body_Maid 1
+    400004: Fist_Maid
+    400006: group
+    400008: group1
+    400010: group1_Body_Maid
+    400012: Head_Maid
+    400014: Maid_Robot
+    400016: pSphere3
+    400018: pSphere4
+    400020: pSphere5
+    400022: pSphere6
+    400024: Right_arm_Maid
+    400026: //RootNode
+    400028: Shooting_arm_Maid
+    400030: Shooting_left_arm_Maid
+    400032: transform1
+    400034: transform10
+    400036: transform11
+    400038: transform12
+    400040: transform2
+    400042: transform3
+    400044: transform4
+    400046: transform5
+    400048: transform6
+    400050: transform7
+    400052: transform8
+    400054: transform9
+    2100000: lambert2
+    2300000: group1_Body_Maid
+    3300000: group1_Body_Maid
+    4300000: group1_Body_Maid
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -62,7 +118,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -89,7 +145,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

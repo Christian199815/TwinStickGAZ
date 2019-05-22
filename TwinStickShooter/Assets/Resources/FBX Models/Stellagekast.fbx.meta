@@ -32,6 +32,11 @@ ModelImporter:
     100052: transform6
     100054: transform7
     100056: transform8
+    100058: pCube13
+    100060: pCube16
+    100062: pCube17
+    100064: pCube18
+    100066: pCube19
     400000: Beeldscherm
     400002: kast
     400004: PC
@@ -61,9 +66,15 @@ ModelImporter:
     400052: transform6
     400054: transform7
     400056: transform8
+    400058: pCube13
+    400060: pCube16
+    400062: pCube17
+    400064: pCube18
+    400066: pCube19
     2100000: lambert1
     2100002: Beeldscherm_Toetsenbord
     2100004: TextureStellageKast2
+    2100006: Texture_Stellage
     2300000: Beeldscherm
     2300002: pCube1
     2300004: pCube6
@@ -73,6 +84,12 @@ ModelImporter:
     2300012: PlankTop
     2300014: Stellage
     2300016: Toetsenbord
+    2300018: pCube13
+    2300020: pCube16
+    2300022: pCube17
+    2300024: pCube18
+    2300026: pCube19
+    2300028: //RootNode
     3300000: Beeldscherm
     3300002: pCube1
     3300004: pCube6
@@ -82,6 +99,12 @@ ModelImporter:
     3300012: PlankTop
     3300014: Stellage
     3300016: Toetsenbord
+    3300018: pCube13
+    3300020: pCube16
+    3300022: pCube17
+    3300024: pCube18
+    3300026: pCube19
+    3300028: //RootNode
     4300000: pCube1
     4300002: pCube6
     4300004: pCube8
@@ -91,6 +114,12 @@ ModelImporter:
     4300012: PlankTop
     4300014: Stellage
     4300016: PlankBottom
+    4300018: pCube13
+    4300020: pCube16
+    4300022: pCube17
+    4300024: pCube18
+    4300026: pCube19
+    4300028: pCube20
   externalObjects: {}
   materials:
     importMaterials: 1
