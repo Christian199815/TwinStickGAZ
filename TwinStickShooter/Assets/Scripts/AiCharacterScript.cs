@@ -42,6 +42,7 @@ public class AiCharacterScript : MonoBehaviour
 
         if(Vector3.Distance(transform.position, Target.position) <= Distance)
         {
+            print("in range");
             GetComponent<NavMeshAgent>().destination = Target.position;
             var distance = Vector3.Distance(Target.position, transform.position);
             if (distance <= maximumLookDistance)

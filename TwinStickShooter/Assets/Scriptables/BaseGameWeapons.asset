@@ -4,29 +4,44 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11a4163657d6ecc48a8add0418263c59, type: 3}
   m_Name: BaseGameWeapons
   m_EditorClassIdentifier: 
+  weaponPickupPrefab: {fileID: 7124417605490329945, guid: e8bb737f3e4fb064c8c13530aadc3acb,
+    type: 3}
   weapons:
+  - weaponName: Nothing
+    damage: 0
+    maxAmmo: 0
+    curAmmo: 0
+    startClip: 0
+    maxClip: 0
+    curClip: 0
+    shootDelay: 0
+    reloadDelay: 0
+    bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 3}
   - weaponName: Glock
     damage: 20
-    ammo: 10
+    maxAmmo: 10
     curAmmo: 0
-    clip: 180
+    startClip: 180
+    maxClip: 300
     curClip: 0
     shootDelay: 0.2
     reloadDelay: 1
-    bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 2}
+    bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 3}
   - weaponName: SMG
-    damage: 20
-    ammo: 10
+    damage: 10
+    maxAmmo: 35
     curAmmo: 0
-    clip: 0
+    startClip: 330
+    maxClip: 500
     curClip: 0
-    shootDelay: 0.2
+    shootDelay: 0.05
     reloadDelay: 1
-    bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 2}
+    bullet: {fileID: 1105580705983860, guid: fb60d734f661f2f419da7fffe79b0de0, type: 3}

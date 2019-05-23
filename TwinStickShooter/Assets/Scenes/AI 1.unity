@@ -570,7 +570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1672654428162360, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4494208766766612, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1124,6 +1124,11 @@ PrefabInstance:
       propertyPath: WayPoints.Array.data[3]
       value: 
       objectReference: {fileID: 364999826}
+    - target: {fileID: 2556605225840589335, guid: 5556c8507d7df4f49aea5c818385ea39,
+        type: 3}
+      propertyPath: Distance
+      value: 55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5556c8507d7df4f49aea5c818385ea39, type: 3}
 --- !u!1001 &8345508810383197443

@@ -26,8 +26,6 @@ public class KeycardDoor : MonoBehaviour
     {
         PlayerController player = other.gameObject.GetComponent<PlayerController>();
 
-        print(player);
-
         if (player != null)
         {
             if (player.keycards.Contains(neededKeycard))

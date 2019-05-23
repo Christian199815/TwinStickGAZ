@@ -10,9 +10,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
 
     // UI Elements
-    private Transform healthbar;
-    private Transform armorbar;
+    private RectTransform healthbar;
+    private RectTransform armorbar;
+    private Text healthText;
+    private Text armorText;
     private Text ammoText;
+    private Text weaponText;
 
     // Player Variables
     [Header("Player Movement")]
@@ -46,14 +49,19 @@ public class PlayerController : MonoBehaviour
     private float lerpHealth;
     private float lerpArmor;
 
+    private void Awake()
+    {
+        weapons.SetInstance();
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         gameCamera = Camera.main;
 
         currentWeapon = weapons.weapons[0];
-        currentWeapon.curAmmo = currentWeapon.ammo;
-        currentWeapon.curClip = currentWeapon.clip;
+        currentWeapon.curAmmo = currentWeapon.maxAmmo;
+        currentWeapon.curClip = currentWeapon.startClip;
 
         shootPoint = new GameObject("Shooting Point").transform;
         shootPoint.position = transform.position + shootOffset;
@@ -62,9 +70,15 @@ public class PlayerController : MonoBehaviour
         lerpHealth = currentHealth;
         lerpArmor = currentArmor;
 
-        healthbar = GameObject.Find("Healthbar").transform;
-        armorbar = GameObject.Find("Armorbar").transform;
-        ammoText = GameObject.Find("Ammo UI").GetComponent<Text>();
+        healthbar = GameObject.Find("Health Mask").GetComponent<RectTransform>();
+        armorbar = GameObject.Find("Armor Mask").GetComponent<RectTransform>();
+
+        healthText = GameObject.Find("Health Text").GetComponent<Text>();
+        armorText = GameObject.Find("Armor Text").GetComponent<Text>();
+        ammoText = GameObject.Find("Ammo Text").GetComponent<Text>();
+        weaponText = GameObject.Find("Weapon Text").GetComponent<Text>();
+
+        weapons.CreatePickup(2, transform.position);
     }
 
     void FixedUpdate()
@@ -96,13 +110,13 @@ public class PlayerController : MonoBehaviour
                 currentWeapon.curAmmo--;
             }
 
-            if (currentWeapon.curAmmo <= 0 && currentWeapon.curClip >= currentWeapon.ammo)
+            if (currentWeapon.curAmmo <= 0 && currentWeapon.curClip >= currentWeapon.maxAmmo)
             {
-                currentWeapon.curAmmo = currentWeapon.ammo;
-                currentWeapon.curClip -= currentWeapon.ammo;
+                currentWeapon.curAmmo = currentWeapon.maxAmmo;
+                currentWeapon.curClip -= currentWeapon.maxAmmo;
                 reloadTimer = 0;
             }
-            else if(currentWeapon.curAmmo <= 0 && currentWeapon.curClip <= currentWeapon.ammo && currentWeapon.curClip > 0)
+            else if(currentWeapon.curAmmo <= 0 && currentWeapon.curClip <= currentWeapon.maxAmmo && currentWeapon.curClip > 0)
             {
                 ammo = currentWeapon.curClip;
                 currentWeapon.curClip = 0;
@@ -126,10 +140,14 @@ public class PlayerController : MonoBehaviour
         lerpHealth = Mathf.Lerp(lerpHealth, currentHealth, .25f);
         lerpArmor = Mathf.Lerp(lerpArmor, currentArmor, .25f);
 
-        healthbar.localScale = new Vector3((1.0f / maxHealth) * lerpHealth, 1, 1);
-        armorbar.localScale = new Vector3((1.0f / maxArmor) * lerpArmor, 1, 1);
+        healthbar.sizeDelta = new Vector2(lerpHealth * 48 ,healthbar.sizeDelta.y);
+        armorbar.sizeDelta = new Vector2(lerpArmor * 45 ,healthbar.sizeDelta.y);
 
-        ammoText.text = "Ammo: " + ((reloadTimer < currentWeapon.reloadDelay) ? 0 : currentWeapon.curAmmo) + "/" + currentWeapon.ammo + "  " + currentWeapon.curClip;
+        healthText.text = Mathf.Round((100.0f / maxHealth) * lerpHealth) + "%";
+        armorText.text = Mathf.Round((100.0f / maxArmor) * lerpArmor) + "%";
+
+        ammoText.text = ((reloadTimer < currentWeapon.reloadDelay) ? 0 : currentWeapon.curAmmo) + " / " + currentWeapon.maxAmmo + "\n" + currentWeapon.curClip;
+        weaponText.text = currentWeapon.weaponName;
         #endregion
     }
 
@@ -144,6 +162,40 @@ public class PlayerController : MonoBehaviour
         else if(Application.isEditor && Application.isPlaying)
         {
             Gizmos.DrawSphere(shootPoint.position, .05f);
+        }
+    }
+
+    // Functions
+    public bool ChangeWeapon(Weapons.Weapon weapon)
+    {
+        print(weapon.weaponName);
+
+        if(weapon.weaponName == currentWeapon.weaponName)
+        {
+            if (weapon.startClip + currentWeapon.startClip <= currentWeapon.maxClip)
+            {
+                currentWeapon.startClip += weapon.startClip;
+                return true;
+            }
+            else if(currentWeapon.curClip <= currentWeapon.maxClip)
+            {
+                currentWeapon.startClip = currentWeapon.maxClip;
+                return true;
+            }
+            else
+            {
+                print("wiwiwiwiwi");
+                return false;
+            }
+        }
+        else
+        {
+            if(currentWeapon.weaponName != "Nothing")
+                weapons.RecreatePickup(currentWeapon, transform.position);
+
+            print("burp");
+            currentWeapon = weapon;
+            return true;
         }
     }
 }
