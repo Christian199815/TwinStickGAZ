@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: d3ec683971f5f8c4eaa71689e1e5df6d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: boek3
+    100002: Bovenkant
+    100004: Erlemeijer
+    100006: //RootNode
+    100008: Microscoop
+    100010: papier1
+    100012: papier2
+    100014: papier3
+    100016: pCube2
+    100018: pCube3
+    100020: pCube4
+    100022: pCylinder13
+    100024: pCylinder2
+    100026: pCylinder3
+    100028: pCylinder4
+    100030: pCylinder5
+    100032: pCylinder6
+    100034: pCylinder7
+    100036: Petri_Schaaltje
+    100038: Plateau_Microscoop
+    100040: Reageerbuis1
+    100042: Reageerbuis2
+    100044: Reageerbuis3
+    100046: Reageerbuis4
+    100048: Reageerbuisje_rek
+    400000: boek3
+    400002: Bovenkant
+    400004: Erlemeijer
+    400006: //RootNode
+    400008: Microscoop
+    400010: papier1
+    400012: papier2
+    400014: papier3
+    400016: pCube2
+    400018: pCube3
+    400020: pCube4
+    400022: pCylinder13
+    400024: pCylinder2
+    400026: pCylinder3
+    400028: pCylinder4
+    400030: pCylinder5
+    400032: pCylinder6
+    400034: pCylinder7
+    400036: Petri_Schaaltje
+    400038: Plateau_Microscoop
+    400040: Reageerbuis1
+    400042: Reageerbuis2
+    400044: Reageerbuis3
+    400046: Reageerbuis4
+    400048: Reageerbuisje_rek
+    2100000: lambert1
+    2300000: boek3
+    2300002: Bovenkant
+    2300004: Erlemeijer
+    2300006: papier1
+    2300008: papier2
+    2300010: papier3
+    2300012: pCube2
+    2300014: pCube3
+    2300016: pCube4
+    2300018: pCylinder13
+    2300020: pCylinder2
+    2300022: pCylinder3
+    2300024: pCylinder4
+    2300026: pCylinder5
+    2300028: pCylinder6
+    2300030: pCylinder7
+    2300032: Petri_Schaaltje
+    2300034: Plateau_Microscoop
+    2300036: Reageerbuis1
+    2300038: Reageerbuis2
+    2300040: Reageerbuis3
+    2300042: Reageerbuis4
+    3300000: boek3
+    3300002: Bovenkant
+    3300004: Erlemeijer
+    3300006: papier1
+    3300008: papier2
+    3300010: papier3
+    3300012: pCube2
+    3300014: pCube3
+    3300016: pCube4
+    3300018: pCylinder13
+    3300020: pCylinder2
+    3300022: pCylinder3
+    3300024: pCylinder4
+    3300026: pCylinder5
+    3300028: pCylinder6
+    3300030: pCylinder7
+    3300032: Petri_Schaaltje
+    3300034: Plateau_Microscoop
+    3300036: Reageerbuis1
+    3300038: Reageerbuis2
+    3300040: Reageerbuis3
+    3300042: Reageerbuis4
+    4300000: Erlemeijer
+    4300002: papier3
+    4300004: pCylinder2
+    4300006: Bovenkant
+    4300008: Plateau_Microscoop
+    4300010: pCylinder6
+    4300012: pCylinder5
+    4300014: pCylinder4
+    4300016: pCylinder7
+    4300018: pCylinder3
+    4300020: pCube2
+    4300022: boek3
+    4300024: Petri_Schaaltje
+    4300026: pCube4
+    4300028: pCube3
+    4300030: pCylinder13
+    4300032: Reageerbuis1
+    4300034: Reageerbuis2
+    4300036: Reageerbuis3
+    4300038: Reageerbuis4
+    4300040: papier1
+    4300042: papier2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

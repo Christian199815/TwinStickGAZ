@@ -77,8 +77,6 @@ public class PlayerController : MonoBehaviour
         armorText = GameObject.Find("Armor Text").GetComponent<Text>();
         ammoText = GameObject.Find("Ammo Text").GetComponent<Text>();
         weaponText = GameObject.Find("Weapon Text").GetComponent<Text>();
-
-        weapons.CreatePickup(2, transform.position);
     }
 
     void FixedUpdate()

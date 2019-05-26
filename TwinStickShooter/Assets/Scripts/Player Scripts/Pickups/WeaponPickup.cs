@@ -15,14 +15,17 @@ public class WeaponPickup : MonoBehaviour
 
     void Awake()
     {
+        pickupText = GameObject.Find("Weapon Pickup Text").GetComponent<Text>();
+    }
+
+    private void Start()
+    {
         if (inspectorSpawned)
         {
             weapon = Weapons.Instance.weapons[weaponID];
             weapon.curAmmo = weapon.maxAmmo;
             weapon.curClip = weapon.startClip;
         }
-
-        pickupText = GameObject.Find("Weapon Pickup Text").GetComponent<Text>();
     }
 
     private void Update()
@@ -36,9 +39,9 @@ public class WeaponPickup : MonoBehaviour
 
         if (player != null)
         {
-            //pickupText.text = "Press F to pick up " + weapon.weaponName;
+            pickupText.text = "Press F to pick up " + weapon.weaponName;
 
-            if (Input.GetKeyUp(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 bool c = player.ChangeWeapon(weapon);
 

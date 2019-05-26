@@ -21,7 +21,7 @@ public class BulletController : MonoBehaviour {
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "Wall")
+        if (other.transform.tag == "Wall" || other.transform.tag == "Furniture")
         {
             Destroy(gameObject);
         }
