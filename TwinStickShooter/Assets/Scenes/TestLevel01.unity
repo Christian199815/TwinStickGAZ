@@ -5454,6 +5454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (Weapon) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7124417605490329945, guid: e8bb737f3e4fb064c8c13530aadc3acb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7118688180561497167, guid: e8bb737f3e4fb064c8c13530aadc3acb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6284,6 +6289,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pick Up (Weapon)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124417605490329945, guid: e8bb737f3e4fb064c8c13530aadc3acb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7118688180561497167, guid: e8bb737f3e4fb064c8c13530aadc3acb,
         type: 3}

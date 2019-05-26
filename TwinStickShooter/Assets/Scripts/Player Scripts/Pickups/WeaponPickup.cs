@@ -13,7 +13,7 @@ public class WeaponPickup : MonoBehaviour
     [Header("Weapon Info")]
     public Weapons.Weapon weapon;
 
-    void Start()
+    void Awake()
     {
         if (inspectorSpawned)
         {
@@ -23,6 +23,11 @@ public class WeaponPickup : MonoBehaviour
         }
 
         pickupText = GameObject.Find("Weapon Pickup Text").GetComponent<Text>();
+    }
+
+    private void Update()
+    {
+        print("I am " + weapon.weaponName);
     }
 
     private void OnTriggerStay(Collider other)
