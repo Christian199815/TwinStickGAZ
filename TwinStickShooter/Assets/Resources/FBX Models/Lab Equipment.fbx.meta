@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3ec683971f5f8c4eaa71689e1e5df6d
+guid: cd6ac7065efb36a41bc3c17a2fcaeaf7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -28,7 +28,6 @@ ModelImporter:
     100044: Reageerbuis3
     100046: Reageerbuis4
     100048: Reageerbuisje_rek
-    100050: polySurface1
     400000: boek3
     400002: Bovenkant
     400004: Erlemeijer
@@ -54,10 +53,8 @@ ModelImporter:
     400044: Reageerbuis3
     400046: Reageerbuis4
     400048: Reageerbuisje_rek
-    400050: polySurface1
-    2100000: lambert1
-    2100002: Texture_Lab_Equipment
-    2100004: lambert5
+    2100000: Texture_Lab_Equipment
+    2100002: lambert1
     2300000: boek3
     2300002: Bovenkant
     2300004: Erlemeijer
@@ -80,7 +77,6 @@ ModelImporter:
     2300038: Reageerbuis2
     2300040: Reageerbuis3
     2300042: Reageerbuis4
-    2300044: polySurface1
     3300000: boek3
     3300002: Bovenkant
     3300004: Erlemeijer
@@ -103,7 +99,6 @@ ModelImporter:
     3300038: Reageerbuis2
     3300040: Reageerbuis3
     3300042: Reageerbuis4
-    3300044: polySurface1
     4300000: Erlemeijer
     4300002: papier3
     4300004: pCylinder2
@@ -126,7 +121,6 @@ ModelImporter:
     4300038: Reageerbuis4
     4300040: papier1
     4300042: papier2
-    4300044: polySurface1
   externalObjects: {}
   materials:
     importMaterials: 1

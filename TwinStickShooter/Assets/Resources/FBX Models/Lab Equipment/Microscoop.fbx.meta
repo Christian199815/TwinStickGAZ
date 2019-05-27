@@ -1,15 +1,56 @@
 fileFormatVersion: 2
-guid: 5be0dc14909b7364b9f794c26408d5ac
+guid: 3622a6ed3b7dcb64691a00b483a751de
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert7
-    2100002: lambert6
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: plant
+    100000: Bovenkant
+    100002: //RootNode
+    100004: pCube2
+    100006: pCylinder2
+    100008: pCylinder3
+    100010: pCylinder4
+    100012: pCylinder5
+    100014: pCylinder6
+    100016: pCylinder7
+    100018: Plateau_Microscoop
+    400000: Bovenkant
+    400002: //RootNode
+    400004: pCube2
+    400006: pCylinder2
+    400008: pCylinder3
+    400010: pCylinder4
+    400012: pCylinder5
+    400014: pCylinder6
+    400016: pCylinder7
+    400018: Plateau_Microscoop
+    2100000: Texture_Lab_Equipment
+    2300000: Bovenkant
+    2300002: pCube2
+    2300004: pCylinder2
+    2300006: pCylinder3
+    2300008: pCylinder4
+    2300010: pCylinder5
+    2300012: pCylinder6
+    2300014: pCylinder7
+    2300016: Plateau_Microscoop
+    3300000: Bovenkant
+    3300002: pCube2
+    3300004: pCylinder2
+    3300006: pCylinder3
+    3300008: pCylinder4
+    3300010: pCylinder5
+    3300012: pCylinder6
+    3300014: pCylinder7
+    3300016: Plateau_Microscoop
+    4300000: pCylinder2
+    4300002: Bovenkant
+    4300004: Plateau_Microscoop
+    4300006: pCylinder6
+    4300008: pCylinder5
+    4300010: pCylinder4
+    4300012: pCylinder7
+    4300014: pCylinder3
+    4300016: pCube2
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -21,12 +62,12 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName:
-    rigImportErrors:
-    rigImportWarnings:
-    animationImportErrors:
-    animationImportWarnings:
-    animationRetargetingWarnings:
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
@@ -85,7 +126,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName:
+    rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -93,6 +134,6 @@ ModelImporter:
   animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

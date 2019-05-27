@@ -1,15 +1,46 @@
 fileFormatVersion: 2
-guid: 5be0dc14909b7364b9f794c26408d5ac
+guid: 3367f2959075252489878c4c7d192c3d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert7
-    2100002: lambert6
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: plant
+    100000: pCube3
+    100002: pCube4
+    100004: pCylinder13
+    100006: Reageerbuis1
+    100008: Reageerbuis2
+    100010: Reageerbuis3
+    100012: Reageerbuis4
+    100014: //RootNode
+    400000: pCube3
+    400002: pCube4
+    400004: pCylinder13
+    400006: Reageerbuis1
+    400008: Reageerbuis2
+    400010: Reageerbuis3
+    400012: Reageerbuis4
+    400014: //RootNode
+    2100000: Texture_Lab_Equipment
+    2300000: pCube3
+    2300002: pCube4
+    2300004: pCylinder13
+    2300006: Reageerbuis1
+    2300008: Reageerbuis2
+    2300010: Reageerbuis3
+    2300012: Reageerbuis4
+    3300000: pCube3
+    3300002: pCube4
+    3300004: pCylinder13
+    3300006: Reageerbuis1
+    3300008: Reageerbuis2
+    3300010: Reageerbuis3
+    3300012: Reageerbuis4
+    4300000: pCube4
+    4300002: pCube3
+    4300004: pCylinder13
+    4300006: Reageerbuis1
+    4300008: Reageerbuis2
+    4300010: Reageerbuis3
+    4300012: Reageerbuis4
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -21,12 +52,12 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName:
-    rigImportErrors:
-    rigImportWarnings:
-    animationImportErrors:
-    animationImportWarnings:
-    animationRetargetingWarnings:
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
@@ -85,7 +116,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName:
+    rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -93,6 +124,6 @@ ModelImporter:
   animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
