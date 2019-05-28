@@ -10,6 +10,7 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] private Transform[] WPoints;
     [SerializeField] private int DPoint;
+    private Vector3 CPoint;
 
     [SerializeField] private float MaximumLookDistance = 30;
     [SerializeField] private float MaximumAttackDistance = 10;
@@ -39,8 +40,10 @@ public class EnemyAI : MonoBehaviour
     {
         if(Vector3.Distance(transform.position, Target.position) <= Distance)
         {
+            CPoint = Target.position;
             print(Distance);
-            GetComponent<NavMeshAgent>().destination = Target.position;
+            print(CPoint);
+            GetComponent<NavMeshAgent>().destination = CPoint;
             var distance = Vector3.Distance(Target.position, transform.position);
             if(distance <= MaximumLookDistance)
             {
