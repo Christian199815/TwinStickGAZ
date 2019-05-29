@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     private Text ammoText;
     private Text weaponText;
 
+    // Statistics
+    public static PlayerStats statistics = new PlayerStats();
+
     // Player Variables
     [Header("Player Movement")]
     public float movementSpeed = 2.0f;
@@ -147,6 +150,12 @@ public class PlayerController : MonoBehaviour
         ammoText.text = ((reloadTimer < currentWeapon.reloadDelay) ? 0 : currentWeapon.curAmmo) + " / " + currentWeapon.maxAmmo + "\n" + currentWeapon.curClip;
         weaponText.text = currentWeapon.weaponName;
         #endregion
+
+        statistics.timePlayed += Time.deltaTime;
+
+        print((int)(statistics.timePlayed / 60.0f / 60.0f) + ":" +(int)((statistics.timePlayed / 60.0f) % 60) + ":" + (int)(statistics.timePlayed % 60));
+
+        if(Time.)
     }
 
     private void OnDrawGizmosSelected()
@@ -194,6 +203,51 @@ public class PlayerController : MonoBehaviour
             print("burp");
             currentWeapon = weapon;
             return true;
+        }
+    }
+
+    public struct PlayerStats
+    {
+        public int enemiesKilled;
+        public int timesDied;
+        public int weaponPickedup;
+        public int healthPickedup;
+        public int ammoPickedup;
+        public int armorPickedup;
+        public float timePlayed;
+
+        public PlayerStats(bool loadFromPrefs = true)
+        {
+            if(loadFromPrefs)
+            {
+                enemiesKilled = PlayerPrefs.GetInt("EnemiesKilled", 0);
+                timesDied = PlayerPrefs.GetInt("TimesDied", 0);
+                weaponPickedup = PlayerPrefs.GetInt("WeaponPickedup", 0);
+                healthPickedup = PlayerPrefs.GetInt("HealthPickedup", 0);
+                ammoPickedup = PlayerPrefs.GetInt("AmmoPickedup", 0);
+                armorPickedup = PlayerPrefs.GetInt("ArmorPickedup", 0);
+                timePlayed = PlayerPrefs.GetInt("TimePlayed", 0);
+            }
+            else
+            {
+                enemiesKilled = 0;
+                timesDied = 0;
+                weaponPickedup = 0;
+                healthPickedup = 0;
+                ammoPickedup = 0;
+                armorPickedup = 0;
+                timePlayed = 0;
+            }
+        }
+
+        public void SaveToPrefs()
+        {
+            PlayerPrefs.SetInt("EnemiesKilled", enemiesKilled);
+            PlayerPrefs.SetInt("TimesDied", enemiesKilled);
+            PlayerPrefs.SetInt("WeaponPickedup", enemiesKilled);
+            PlayerPrefs.SetInt("HealthPickedup", enemiesKilled);
+            PlayerPrefs.SetInt("AmmoPickedup", enemiesKilled);
+            PlayerPrefs.SetInt("ArmorPickedup", enemiesKilled);
         }
     }
 }

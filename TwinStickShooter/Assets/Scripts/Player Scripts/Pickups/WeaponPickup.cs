@@ -30,7 +30,6 @@ public class WeaponPickup : MonoBehaviour
 
     private void Update()
     {
-        print("I am " + weapon.weaponName);
     }
 
     private void OnTriggerStay(Collider other)
@@ -63,6 +62,7 @@ public class WeaponPickup : MonoBehaviour
 
         if (player != null)
         {
+            PlayerController.statistics.weaponPickedup++;
             pickupText.text = "";
         }
     }
