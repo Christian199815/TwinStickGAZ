@@ -5,12 +5,30 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Toetsenbord
     100002: //RootNode
+    100004: Beeldscherm
+    100006: PC
+    100008: PC1
+    100010: polySurface15
+    100012: transform36
+    100014: transform37
+    100016: transform38
     400000: Toetsenbord
     400002: //RootNode
+    400004: Beeldscherm
+    400006: PC
+    400008: PC1
+    400010: polySurface15
+    400012: transform36
+    400014: transform37
+    400016: transform38
     2100000: Beeldscherm_Toetsenbord
+    2100002: Beeldscherm_Toetsenbord1
     2300000: Toetsenbord
+    2300002: polySurface15
     3300000: Toetsenbord
+    3300002: polySurface15
     4300000: Toetsenbord
+    4300002: polySurface15
   externalObjects: {}
   materials:
     importMaterials: 1

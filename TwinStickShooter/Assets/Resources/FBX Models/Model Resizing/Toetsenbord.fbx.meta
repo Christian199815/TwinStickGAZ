@@ -1,59 +1,16 @@
 fileFormatVersion: 2
-guid: c9f72d096c008b44787b240f1b33a738
+guid: 5ff6d1fc4d30f8f42b68f0b9674d1a25
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Kraan_Wasbak
-    100002: Pijp_Wasbak
-    100004: Wasbak
-    100006: //RootNode
-    100008: polySurface11
-    100010: polySurface12
-    100012: polySurface12 1
-    100014: polySurface13
-    100016: Toilet
-    100018: Toilet1
-    100020: transform10
-    100022: transform11
-    100024: transform12
-    100026: transform13
-    100028: transform40
-    100030: transform41
-    100032: transform42
-    100034: transform9
-    100036: Wastafel
-    400000: Kraan_Wasbak
-    400002: Pijp_Wasbak
-    400004: Wasbak
-    400006: //RootNode
-    400008: polySurface11
-    400010: polySurface12
-    400012: polySurface12 1
-    400014: polySurface13
-    400016: Toilet
-    400018: Toilet1
-    400020: transform10
-    400022: transform11
-    400024: transform12
-    400026: transform13
-    400028: transform40
-    400030: transform41
-    400032: transform42
-    400034: transform9
-    400036: Wastafel
-    2100000: TextureWastafel
-    2300000: Kraan_Wasbak
-    2300002: Pijp_Wasbak
-    2300004: Wasbak
-    2300006: polySurface12
-    3300000: Kraan_Wasbak
-    3300002: Pijp_Wasbak
-    3300004: Wasbak
-    3300006: polySurface12
-    4300000: Wasbak
-    4300002: Kraan_Wasbak
-    4300004: Pijp_Wasbak
-    4300006: polySurface12
+    100000: polySurface15
+    100002: //RootNode
+    400000: polySurface15
+    400002: //RootNode
+    2100000: Beeldscherm_Toetsenbord7
+    2300000: polySurface15
+    3300000: polySurface15
+    4300000: polySurface15
   externalObjects: {}
   materials:
     importMaterials: 1

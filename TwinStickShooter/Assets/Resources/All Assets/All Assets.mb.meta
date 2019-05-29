@@ -134,6 +134,16 @@ ModelImporter:
     100256: transform9
     100258: Wasbak
     100260: Wastafel
+    100262: bottom
+    100264: chair
+    100266: chair_clean
+    100268: microscoop
+    100270: pCube20
+    100272: pCube4 1
+    100274: polySurface12 1
+    100276: transform40
+    100278: transform41
+    100280: transform42
     400000: //RootNode
     400002: Ammo
     400004: Armor
@@ -265,6 +275,17 @@ ModelImporter:
     400256: transform9
     400258: Wasbak
     400260: Wastafel
+    400262: bottom
+    400264: chair
+    400266: chair_clean
+    400268: microscoop
+    400270: pCube20
+    400272: pCube4 1
+    400274: polySurface12 1
+    400276: transform40
+    400278: transform41
+    400280: transform42
+    2000000: bottom
     2100000: Pickups2
     2100002: Pickups1
     2100004: Pickups
@@ -292,6 +313,21 @@ ModelImporter:
     2100048: lambert11
     2100050: lambert12
     2100052: Weapons
+    2100054: Beeldscherm_Toetsenbord6
+    2100056: Beeldscherm_Toetsenbord7
+    2100058: lambert18
+    2100060: lambert19
+    2100062: lambert20
+    2100064: TextureToilet2
+    2100066: TextureWastafel2
+    2100068: Texture_Lab_Equipment7
+    2100070: Texture_Lab_Equipment8
+    2100072: Texture_Lab_Equipment9
+    2100074: Texture_Lab_Equipment10
+    2100076: Texture_Lab_Equipment11
+    2100078: Texture_Lab_Equipment12
+    2100080: lambert21
+    2100082: lambert22
     2300000: Chair
     2300002: Chair_Clean
     2300004: doorframe
@@ -325,6 +361,16 @@ ModelImporter:
     2300060: polySurface8
     2300062: polySurface9
     2300064: Stellagekast
+    2300066: boek3
+    2300068: chair
+    2300070: chair_clean
+    2300072: Erlemeijer
+    2300074: microscoop
+    2300076: papier3
+    2300078: pCube20
+    2300080: pCube4
+    2300082: Petri_Schaaltje
+    2300084: Toilet
     3300000: Chair
     3300002: Chair_Clean
     3300004: doorframe
@@ -358,6 +404,16 @@ ModelImporter:
     3300060: polySurface8
     3300062: polySurface9
     3300064: Stellagekast
+    3300066: boek3
+    3300068: chair
+    3300070: chair_clean
+    3300072: Erlemeijer
+    3300074: microscoop
+    3300076: papier3
+    3300078: pCube20
+    3300080: pCube4
+    3300082: Petri_Schaaltje
+    3300084: Toilet
     4300000: polySurface1
     4300002: polySurface2
     4300004: polySurface3
@@ -391,6 +447,16 @@ ModelImporter:
     4300060: elevator_door1
     4300062: doorframe
     4300064: Pistol
+    4300066: chair
+    4300068: chair_clean
+    4300070: pCube20
+    4300072: Toilet
+    4300074: boek3
+    4300076: Erlemeijer
+    4300078: microscoop
+    4300080: papier3
+    4300082: Petri_Schaaltje
+    4300084: pCube4
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -404,12 +470,12 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName:
-    rigImportErrors:
-    rigImportWarnings:
-    animationImportErrors:
-    animationImportWarnings:
-    animationRetargetingWarnings:
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
@@ -468,7 +534,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName:
+    rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -476,6 +542,6 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
