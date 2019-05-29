@@ -134,6 +134,14 @@ ModelImporter:
     100256: transform9
     100258: Wasbak
     100260: Wastafel
+    100262: bottom
+    100264: Bureau
+    100266: microscoop
+    100268: pCube20
+    100270: reageerbuisjes
+    100272: transform40
+    100274: transform41
+    100276: transform42
     400000: //RootNode
     400002: Ammo
     400004: Armor
@@ -265,6 +273,15 @@ ModelImporter:
     400256: transform9
     400258: Wasbak
     400260: Wastafel
+    400262: bottom
+    400264: Bureau
+    400266: microscoop
+    400268: pCube20
+    400270: reageerbuisjes
+    400272: transform40
+    400274: transform41
+    400276: transform42
+    2000000: bottom
     2100000: Pickups2
     2100002: Pickups1
     2100004: Pickups
@@ -292,6 +309,21 @@ ModelImporter:
     2100048: lambert11
     2100050: lambert12
     2100052: Weapons
+    2100054: Beeldscherm_Toetsenbord4
+    2100056: Beeldscherm_Toetsenbord5
+    2100058: lambert13
+    2100060: lambert14
+    2100062: lambert15
+    2100064: Texture_Stellage1
+    2100066: TextureToilet1
+    2100068: lambert16
+    2100070: lambert17
+    2100072: Texture_Lab_Equipment1
+    2100074: Texture_Lab_Equipment2
+    2100076: Texture_Lab_Equipment3
+    2100078: Texture_Lab_Equipment4
+    2100080: Texture_Lab_Equipment5
+    2100082: Texture_Lab_Equipment6
     2300000: Chair
     2300002: Chair_Clean
     2300004: doorframe
@@ -325,6 +357,15 @@ ModelImporter:
     2300060: polySurface8
     2300062: polySurface9
     2300064: Stellagekast
+    2300066: boek3
+    2300068: Bureau
+    2300070: Erlemeijer
+    2300072: microscoop
+    2300074: papier3
+    2300076: pCube20
+    2300078: Petri_Schaaltje
+    2300080: reageerbuisjes
+    2300082: Toilet
     3300000: Chair
     3300002: Chair_Clean
     3300004: doorframe
@@ -358,6 +399,15 @@ ModelImporter:
     3300060: polySurface8
     3300062: polySurface9
     3300064: Stellagekast
+    3300066: boek3
+    3300068: Bureau
+    3300070: Erlemeijer
+    3300072: microscoop
+    3300074: papier3
+    3300076: pCube20
+    3300078: Petri_Schaaltje
+    3300080: reageerbuisjes
+    3300082: Toilet
     4300000: polySurface1
     4300002: polySurface2
     4300004: polySurface3
@@ -391,6 +441,15 @@ ModelImporter:
     4300060: elevator_door1
     4300062: doorframe
     4300064: Pistol
+    4300066: Bureau
+    4300068: pCube20
+    4300070: Toilet
+    4300072: boek3
+    4300074: Erlemeijer
+    4300076: microscoop
+    4300078: papier3
+    4300080: Petri_Schaaltje
+    4300082: reageerbuisjes
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -404,12 +463,12 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName:
-    rigImportErrors:
-    rigImportWarnings:
-    animationImportErrors:
-    animationImportWarnings:
-    animationRetargetingWarnings:
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
@@ -468,7 +527,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName:
+    rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -476,6 +535,6 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

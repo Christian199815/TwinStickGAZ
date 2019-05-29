@@ -29,6 +29,13 @@ ModelImporter:
     100046: Reageerbuis4
     100048: Reageerbuisje_rek
     100050: polySurface1
+    100052: pCube4 1
+    100054: transform1
+    100056: transform2
+    100058: transform3
+    100060: transform4
+    100062: transform5
+    100064: transform6
     400000: boek3
     400002: Bovenkant
     400004: Erlemeijer
@@ -55,6 +62,13 @@ ModelImporter:
     400046: Reageerbuis4
     400048: Reageerbuisje_rek
     400050: polySurface1
+    400052: pCube4 1
+    400054: transform1
+    400056: transform2
+    400058: transform3
+    400060: transform4
+    400062: transform5
+    400064: transform6
     2100000: lambert1
     2100002: Texture_Lab_Equipment
     2100004: lambert5
