@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private Transform Target;
     [SerializeField] private Transform Projectile;
+    [SerializeField] private Transform ShootOffset;
 
     [SerializeField] private Transform[] WPoints;
     [SerializeField] private int DPoint;
@@ -21,7 +22,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float shotTime = 0f;
 
 
-    [SerializeField] private int Health = 40;
+    [SerializeField] public int Health = 40;
     [SerializeField] private float Speed = 1.5f;
     [SerializeField] private int Counter = 0;
     [SerializeField] private int Score;
@@ -38,22 +39,26 @@ public class EnemyAI : MonoBehaviour
     }
     private void Update()
     {
-        if(Vector3.Distance(transform.position, Target.position) <= Distance)
+        Vector3 targetDir = Target.position - transform.position;
+        float angleToPlayer = (Vector3.Angle(targetDir, transform.forward));
+
+        if(angleToPlayer >= -90 && angleToPlayer <= 90 && Vector3.Distance(transform.position, Target.position) <= Distance)
         {
+            Debug.Log("Player in sight");
             CPoint = Target.position;
             print(Distance);
             print(CPoint);
             GetComponent<NavMeshAgent>().destination = CPoint;
             var distance = Vector3.Distance(Target.position, transform.position);
-            if(distance <= MaximumLookDistance)
+            if (distance <= MaximumLookDistance)
             {
                 LookAtTarget();
-                if(distance <= MaximumAttackDistance && (Time.time - shotTime) > ShotInterval)
+                if (distance <= MaximumAttackDistance && (Time.time - shotTime) > ShotInterval)
                 {
                     Shoot();
                 }
             }
-        }
+        }          
         else
         {
             if(!agent.pathPending && agent.remainingDistance < 0.5f)
@@ -67,7 +72,7 @@ public class EnemyAI : MonoBehaviour
     void Shoot()
     {
         shotTime = Time.time;
-        Instantiate(Projectile, transform.position + (Target.position - transform.position).normalized, Quaternion.LookRotation(Target.position - transform.position));
+        Instantiate(Projectile, ShootOffset.position, Quaternion.LookRotation(Target.position - transform.position));
     }
 
     void LookAtTarget()

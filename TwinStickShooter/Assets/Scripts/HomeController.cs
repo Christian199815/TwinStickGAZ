@@ -84,7 +84,7 @@ public class HomeController : MonoBehaviour
     {
         if(Lift.position == Select[1].position && Input.GetKeyDown(Enter))
         {
-            //SceneManager.LoadScene();
+            SceneManager.LoadScene(1);
         }
         if (Lift.position == Select[2].position && Input.GetKeyDown(Enter))
         {

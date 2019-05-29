@@ -1,52 +1,15 @@
 fileFormatVersion: 2
-guid: 15099b14cac6ea04fb4f050ae5621fcd
+guid: 6b6af0f48a369c24888a1290c6ed8beb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCube1
-    100004: pCube5
-    100006: pCube6
-    100008: polySurface1
-    100010: Chair
-    100012: Chair_Clean
-    100014: Desk
-    100016: Wall
     400000: //RootNode
-    400002: pCube1
-    400004: pCube5
-    400006: pCube6
-    400008: polySurface1
-    400010: Chair
-    400012: Chair_Clean
-    400014: Desk
-    400016: Wall
-    2100000: lambert1
-    2100002: lambert5
-    2300000: pCube1
-    2300002: pCube5
-    2300004: pCube6
-    2300006: polySurface1
-    2300008: Chair
-    2300010: Chair_Clean
-    2300012: Desk
-    2300014: Wall
-    3300000: pCube1
-    3300002: pCube5
-    3300004: pCube6
-    3300006: polySurface1
-    3300008: Chair
-    3300010: Chair_Clean
-    3300012: Desk
-    3300014: Wall
-    4300000: pCube1
-    4300002: polySurface1
-    4300004: pCube5
-    4300006: pCube6
-    4300008: Wall
-    4300010: Desk
-    4300012: Chair
-    4300014: Chair_Clean
+    2100000: Bonsai
+    2100002: lambert4
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Bonsai3
   externalObjects: {}
   materials:
     importMaterials: 1

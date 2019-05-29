@@ -138,6 +138,11 @@ public class PlayerController : MonoBehaviour
             currentArmor = maxArmor;
         }
 
+        if(currentHealth <= -10)
+        {
+            Destroy(gameObject);
+        }
+
         lerpHealth = Mathf.Lerp(lerpHealth, currentHealth, .25f);
         lerpArmor = Mathf.Lerp(lerpArmor, currentArmor, .25f);
 
@@ -155,7 +160,7 @@ public class PlayerController : MonoBehaviour
 
         print((int)(statistics.timePlayed / 60.0f / 60.0f) + ":" +(int)((statistics.timePlayed / 60.0f) % 60) + ":" + (int)(statistics.timePlayed % 60));
 
-        if(Time.)
+        //if(Time.)
     }
 
     private void OnDrawGizmosSelected()

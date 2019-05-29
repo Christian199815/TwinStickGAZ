@@ -7,7 +7,7 @@ public class BulletController : MonoBehaviour {
     private Rigidbody rb;
 
     [Header("Bullet settings")]
-    public float bulletSpeed = 7.0f;
+    public float bulletSpeed = 8.0f;
     public AiCharacterScript Ai;
 
     private void Start()
@@ -28,12 +28,21 @@ public class BulletController : MonoBehaviour {
         if(other.transform.tag == "Enemy")
         {
 
-            //other.gameObject.GetComponent<AiCharacterScript>().Health--;
+            other.gameObject.GetComponent<EnemyAI>().Health--;
             Destroy(gameObject);
         }
         if(other.transform.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerController>().maxHealth--;
+            if (other.gameObject.GetComponent<PlayerController>().currentArmor >= 1)
+            {
+                other.gameObject.GetComponent<PlayerController>().currentArmor--;
+                Destroy(gameObject);
+            }
+            else
+            {
+                other.gameObject.GetComponent<PlayerController>().currentHealth--;
+                Destroy(gameObject);
+            }
         }
     }
 }
