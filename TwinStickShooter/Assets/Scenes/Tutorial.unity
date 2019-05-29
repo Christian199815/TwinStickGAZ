@@ -284,7 +284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4494208766766612, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4494208766766612, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1806,7 +1806,7 @@ Transform:
   - {fileID: 2002743204}
   - {fileID: 946571823}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &177927776
 PrefabInstance:
@@ -2570,7 +2570,7 @@ Transform:
   - {fileID: 429604787}
   - {fileID: 795414752}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &273677399
 PrefabInstance:
@@ -2872,22 +2872,22 @@ PrefabInstance:
     - target: {fileID: 2556605225840589335, guid: 5556c8507d7df4f49aea5c818385ea39,
         type: 3}
       propertyPath: WayPoints.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 349201008}
     - target: {fileID: 2556605225840589335, guid: 5556c8507d7df4f49aea5c818385ea39,
         type: 3}
       propertyPath: WayPoints.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 109665323}
     - target: {fileID: 2556605225840589335, guid: 5556c8507d7df4f49aea5c818385ea39,
         type: 3}
       propertyPath: WayPoints.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 1453419706}
     - target: {fileID: 2556605225840589335, guid: 5556c8507d7df4f49aea5c818385ea39,
         type: 3}
       propertyPath: WayPoints.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1607607879}
     - target: {fileID: 2556605225840589335, guid: 5556c8507d7df4f49aea5c818385ea39,
         type: 3}
@@ -2974,7 +2974,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &326930300
 PrefabInstance:
@@ -3506,7 +3506,7 @@ PrefabInstance:
     - target: {fileID: 73268310093110622, guid: 69394f2217b8cfd4894bfe5a8e719ebc,
         type: 3}
       propertyPath: m_ConnectedBody
-      value: 
+      value:
       objectReference: {fileID: 1105866165}
     - target: {fileID: 73268310093110622, guid: 69394f2217b8cfd4894bfe5a8e719ebc,
         type: 3}
@@ -5100,7 +5100,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -6413,27 +6413,27 @@ PrefabInstance:
     - target: {fileID: 1452022425048668865, guid: ddff1c136776b7141a53763c80473b5d,
         type: 3}
       propertyPath: Target
-      value: 
+      value:
       objectReference: {fileID: 149623784}
     - target: {fileID: 1452022425048668865, guid: ddff1c136776b7141a53763c80473b5d,
         type: 3}
       propertyPath: WPoints.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 349201008}
     - target: {fileID: 1452022425048668865, guid: ddff1c136776b7141a53763c80473b5d,
         type: 3}
       propertyPath: WPoints.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 109665323}
     - target: {fileID: 1452022425048668865, guid: ddff1c136776b7141a53763c80473b5d,
         type: 3}
       propertyPath: WPoints.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 1453419706}
     - target: {fileID: 1452022425048668865, guid: ddff1c136776b7141a53763c80473b5d,
         type: 3}
       propertyPath: WPoints.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1607607879}
     - target: {fileID: 1452022425048668865, guid: ddff1c136776b7141a53763c80473b5d,
         type: 3}
@@ -7459,7 +7459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &761161302
 PrefabInstance:
@@ -7600,6 +7600,22 @@ Transform:
   m_Father: {fileID: 1026940427}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &763495981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355262409}
+  m_Layer: 0
+  m_Name: Recovery GameObject (355262409)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &768109211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10819,7 +10835,7 @@ Transform:
   m_Children:
   - {fileID: 281569043}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &974284112
 PrefabInstance:
@@ -11601,7 +11617,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1116092451
 PrefabInstance:
@@ -12096,27 +12112,27 @@ PrefabInstance:
     - target: {fileID: 4410375400705131442, guid: fc2159ada0517ff45ba14e992358b4ee,
         type: 3}
       propertyPath: Target
-      value: 
+      value:
       objectReference: {fileID: 149623784}
     - target: {fileID: 4410375400705131442, guid: fc2159ada0517ff45ba14e992358b4ee,
         type: 3}
       propertyPath: WPoints.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 349201008}
     - target: {fileID: 4410375400705131442, guid: fc2159ada0517ff45ba14e992358b4ee,
         type: 3}
       propertyPath: WPoints.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 109665323}
     - target: {fileID: 4410375400705131442, guid: fc2159ada0517ff45ba14e992358b4ee,
         type: 3}
       propertyPath: WPoints.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 1453419706}
     - target: {fileID: 4410375400705131442, guid: fc2159ada0517ff45ba14e992358b4ee,
         type: 3}
       propertyPath: WPoints.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1607607879}
     - target: {fileID: 4410375400705131442, guid: fc2159ada0517ff45ba14e992358b4ee,
         type: 3}
@@ -20610,7 +20626,7 @@ Transform:
   - {fileID: 349201008}
   - {fileID: 109665323}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1851816178
 PrefabInstance:
@@ -21298,6 +21314,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5be0dc14909b7364b9f794c26408d5ac, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value:
+      objectReference: {fileID: 2100000, guid: 2d37795ac11d39a4b84b0ab655c3efb5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5be0dc14909b7364b9f794c26408d5ac, type: 3}
 --- !u!1 &1947781132
@@ -21973,12 +21993,12 @@ PrefabInstance:
     - target: {fileID: 2556605225840589335, guid: 5556c8507d7df4f49aea5c818385ea39,
         type: 3}
       propertyPath: WayPoints.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 746957710}
     - target: {fileID: 2556605225840589335, guid: 5556c8507d7df4f49aea5c818385ea39,
         type: 3}
       propertyPath: WayPoints.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 708948938}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5556c8507d7df4f49aea5c818385ea39, type: 3}
@@ -23555,7 +23575,7 @@ PrefabInstance:
     - target: {fileID: 1698428569471420189, guid: 9421dd7050e7306418aeb91166371dcf,
         type: 3}
       propertyPath: Pause
-      value: 
+      value:
       objectReference: {fileID: 1526267298}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9421dd7050e7306418aeb91166371dcf, type: 3}
