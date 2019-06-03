@@ -103,6 +103,7 @@ public class EnemyAI : MonoBehaviour
         if(Health <= 0)
         {
             //overall score += Score;
+            PlayerController.statistics.score += 25;
             Destroy(gameObject);
         }
     }
