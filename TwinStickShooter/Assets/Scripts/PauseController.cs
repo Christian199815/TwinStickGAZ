@@ -12,6 +12,7 @@ public class PauseController : MonoBehaviour
     [SerializeField] private KeyCode down;
     [SerializeField] private KeyCode Enter;
     [SerializeField] private int Speed;
+    [SerializeField] private GameObject Level;
 
     
     [SerializeField] private GameObject Pause;

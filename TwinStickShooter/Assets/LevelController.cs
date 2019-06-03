@@ -7,10 +7,12 @@ public class LevelController : MonoBehaviour
     [SerializeField] private GameObject Pause;
     [SerializeField] private GameObject GameOver;
     [SerializeField] private Transform Player;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+
         //GameOver.SetActive(false);
         //Pause.SetActive(false);
     }
@@ -40,7 +42,7 @@ public class LevelController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause.SetActive(true);
-            Time.timeScale = 0;
+            Time.timeScale = 0.5f;
         }
     }
 }

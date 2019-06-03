@@ -25,7 +25,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] public int Health = 40;
     [SerializeField] private float Speed = 1.5f;
     [SerializeField] private int Counter = 0;
-    [SerializeField] private int Score;
+    [SerializeField] private int Points;
 
     [SerializeField] private float Distance;
 

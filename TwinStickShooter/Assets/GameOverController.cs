@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameOverController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameOverController : MonoBehaviour
 
     [SerializeField] private GameObject Home;
     [SerializeField] private float speed;
+    //[SerializeField] private Text Killed;
 
     private void Update()
     {
@@ -74,4 +76,9 @@ public class GameOverController : MonoBehaviour
            //SceneManager.LoadScene();
         }
     }
+
+    //void KilledBy()
+    //{
+
+    //}
 }
