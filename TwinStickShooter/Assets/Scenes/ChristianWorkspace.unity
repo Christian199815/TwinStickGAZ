@@ -4016,6 +4016,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6535163488499533362, guid: 47e561be52f128e4792e4faeae74a01e,
+        type: 3}
+      propertyPath: keycard
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e561be52f128e4792e4faeae74a01e, type: 3}
 --- !u!1001 &270437601
@@ -7134,7 +7139,8 @@ PrefabInstance:
       propertyPath: m_Spring.targetPosition
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 73268310093110608, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
 --- !u!1001 &486140355
 PrefabInstance:
@@ -7765,7 +7771,8 @@ PrefabInstance:
       propertyPath: m_Spring.targetPosition
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 73268310093110608, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
 --- !u!1 &521731591 stripped
 GameObject:
@@ -10365,7 +10372,8 @@ PrefabInstance:
       propertyPath: m_Spring.targetPosition
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 73268310093110608, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
 --- !u!1001 &708253646
 PrefabInstance:
@@ -12033,7 +12041,8 @@ PrefabInstance:
       propertyPath: m_Spring.targetPosition
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 73268310093110608, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
 --- !u!1001 &819970741
 PrefabInstance:
@@ -13066,7 +13075,8 @@ PrefabInstance:
       propertyPath: m_Spring.targetPosition
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 73268310093110608, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
 --- !u!1001 &874783185
 PrefabInstance:
@@ -17904,7 +17914,8 @@ PrefabInstance:
       propertyPath: m_Spring.targetPosition
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 73268310093110608, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
 --- !u!1 &1141475440 stripped
 GameObject:
@@ -20802,10 +20813,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1672654428162360, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4494208766766612, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.88
@@ -20862,10 +20869,9 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 54930281346027864, guid: 8a3902d2ed25d354fb4b5eee3390c179,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 84
+    - target: {fileID: 1672654428162360, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 114842973354849624, guid: 8a3902d2ed25d354fb4b5eee3390c179,
         type: 3}
@@ -20891,6 +20897,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shootOffset.z
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 54930281346027864, guid: 8a3902d2ed25d354fb4b5eee3390c179,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 84
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
@@ -25756,7 +25767,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 73268310093110608, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
 --- !u!1001 &1686386142
 PrefabInstance:
@@ -28339,7 +28351,8 @@ PrefabInstance:
       propertyPath: m_Spring.targetPosition
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 73268310093110608, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69394f2217b8cfd4894bfe5a8e719ebc, type: 3}
 --- !u!1001 &1819421638
 PrefabInstance:
@@ -31440,6 +31453,30 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711813646, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
+      propertyPath: m_Name
+      value: Stats Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711813647, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 61.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711813647, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 123.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711813647, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 331.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711813648, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
+      propertyPath: m_Text
+      value: 'Score: 420
+
+        Times died: 420
+
+        Time played: 0:0:0'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}

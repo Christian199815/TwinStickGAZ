@@ -16,9 +16,10 @@ public class PlayerController : MonoBehaviour
     private Text armorText;
     private Text ammoText;
     private Text weaponText;
+    private Text statText;
 
     // Statistics
-    public static PlayerStats statistics = new PlayerStats();
+    public static PlayerStats statistics;
 
     // Player Variables
     [Header("Player Movement")]
@@ -75,11 +76,13 @@ public class PlayerController : MonoBehaviour
 
         healthbar = GameObject.Find("Health Mask").GetComponent<RectTransform>();
         armorbar = GameObject.Find("Armor Mask").GetComponent<RectTransform>();
-
         healthText = GameObject.Find("Health Text").GetComponent<Text>();
         armorText = GameObject.Find("Armor Text").GetComponent<Text>();
         ammoText = GameObject.Find("Ammo Text").GetComponent<Text>();
         weaponText = GameObject.Find("Weapon Text").GetComponent<Text>();
+        statText = GameObject.Find("Stats Text").GetComponent<Text>();
+
+        statistics = new PlayerStats();
     }
 
     void FixedUpdate()
@@ -138,11 +141,6 @@ public class PlayerController : MonoBehaviour
             currentArmor = maxArmor;
         }
 
-        if(currentHealth <= -10)
-        {
-            Destroy(gameObject);
-        }
-
         lerpHealth = Mathf.Lerp(lerpHealth, currentHealth, .25f);
         lerpArmor = Mathf.Lerp(lerpArmor, currentArmor, .25f);
 
@@ -158,9 +156,11 @@ public class PlayerController : MonoBehaviour
 
         statistics.timePlayed += Time.deltaTime;
 
-        print((int)(statistics.timePlayed / 60.0f / 60.0f) + ":" +(int)((statistics.timePlayed / 60.0f) % 60) + ":" + (int)(statistics.timePlayed % 60));
+        statText.text = "Score: " + statistics.score + "\n" + "Times Player: " + statistics.timesDied + "\n" + "Play Time: " + ((int)(statistics.timePlayed / 60.0f / 60.0f) + ":" + (int)((statistics.timePlayed / 60.0f) % 60) + ":" + (int)(statistics.timePlayed % 60));
 
         //if(Time.)
+
+        statistics.SaveToPrefs();
     }
 
     private void OnDrawGizmosSelected()
@@ -220,29 +220,19 @@ public class PlayerController : MonoBehaviour
         public int ammoPickedup;
         public int armorPickedup;
         public float timePlayed;
+        public int score;
 
         public PlayerStats(bool loadFromPrefs = true)
         {
-            if(loadFromPrefs)
-            {
-                enemiesKilled = PlayerPrefs.GetInt("EnemiesKilled", 0);
-                timesDied = PlayerPrefs.GetInt("TimesDied", 0);
-                weaponPickedup = PlayerPrefs.GetInt("WeaponPickedup", 0);
-                healthPickedup = PlayerPrefs.GetInt("HealthPickedup", 0);
-                ammoPickedup = PlayerPrefs.GetInt("AmmoPickedup", 0);
-                armorPickedup = PlayerPrefs.GetInt("ArmorPickedup", 0);
-                timePlayed = PlayerPrefs.GetInt("TimePlayed", 0);
-            }
-            else
-            {
-                enemiesKilled = 0;
-                timesDied = 0;
-                weaponPickedup = 0;
-                healthPickedup = 0;
-                ammoPickedup = 0;
-                armorPickedup = 0;
-                timePlayed = 0;
-            }
+            enemiesKilled = PlayerPrefs.GetInt("EnemiesKilled", 0);
+            timesDied = PlayerPrefs.GetInt("TimesDied", 0);
+            weaponPickedup = PlayerPrefs.GetInt("WeaponPickedup", 0);
+            healthPickedup = PlayerPrefs.GetInt("HealthPickedup", 0);
+            ammoPickedup = PlayerPrefs.GetInt("AmmoPickedup", 0);
+            armorPickedup = PlayerPrefs.GetInt("ArmorPickedup", 0);
+            timePlayed = PlayerPrefs.GetInt("TimePlayed", 0);
+
+            score = 0;
         }
 
         public void SaveToPrefs()
@@ -253,6 +243,8 @@ public class PlayerController : MonoBehaviour
             PlayerPrefs.SetInt("HealthPickedup", enemiesKilled);
             PlayerPrefs.SetInt("AmmoPickedup", enemiesKilled);
             PlayerPrefs.SetInt("ArmorPickedup", enemiesKilled);
+
+            print("save");
         }
     }
 }

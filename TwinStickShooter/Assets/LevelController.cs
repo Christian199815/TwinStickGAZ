@@ -30,6 +30,8 @@ public class LevelController : MonoBehaviour
     {
         if(Player.GetComponent<PlayerController>().currentHealth <= 0)
         {
+            PlayerController.statistics.timesDied++;
+
             GameOver.SetActive(true);
             
             
