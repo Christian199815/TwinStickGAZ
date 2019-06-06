@@ -20813,6 +20813,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1672654428162360, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4494208766766612, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.88
@@ -20869,10 +20873,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1672654428162360, guid: 8a3902d2ed25d354fb4b5eee3390c179, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 114842973354849624, guid: 8a3902d2ed25d354fb4b5eee3390c179,
         type: 3}
       propertyPath: cameraOffset.y
@@ -20897,6 +20897,11 @@ PrefabInstance:
         type: 3}
       propertyPath: shootOffset.z
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114842973354849624, guid: 8a3902d2ed25d354fb4b5eee3390c179,
+        type: 3}
+      propertyPath: healthCheat
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 54930281346027864, guid: 8a3902d2ed25d354fb4b5eee3390c179,
         type: 3}
@@ -31460,7 +31465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1711813647, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 61.55
+      value: 61.55005
       objectReference: {fileID: 0}
     - target: {fileID: 1711813647, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
       propertyPath: m_SizeDelta.y
