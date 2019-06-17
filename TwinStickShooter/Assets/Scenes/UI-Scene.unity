@@ -474,19 +474,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Select:
-  - {fileID: 1243789058}
+  - {fileID: 0}
   - {fileID: 537791656}
   - {fileID: 582174971}
   - {fileID: 941705455}
   - {fileID: 217817594}
   Lift: {fileID: 1565076856}
   position: 0
-  up: 273
-  down: 274
-  Enter: 32
+  up: 119
+  down: 115
+  Enter: 13
   Home: {fileID: 2103853502}
-  Credits: {fileID: 1161113963}
-  LevelSelect: {fileID: 141992698}
+  Credits: {fileID: 0}
+  LevelSelect: {fileID: 0}
   speed: 6
 --- !u!1 &348612516
 GameObject:
@@ -880,7 +880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &641088196
 Transform:
   m_ObjectHideFlags: 0

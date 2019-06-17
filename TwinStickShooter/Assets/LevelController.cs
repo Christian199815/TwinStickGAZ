@@ -7,7 +7,10 @@ public class LevelController : MonoBehaviour
     [SerializeField] private GameObject Pause;
     [SerializeField] private GameObject GameOver;
     [SerializeField] private Transform Player;
-    
+
+    [SerializeField] private KeyCode start;
+    bool StartPressed;
+    bool C_start;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,8 @@ public class LevelController : MonoBehaviour
     {
         BecomePaused();
         PlayerDeath();
+
+        StartPressed = Input.GetKey(KeyCode.JoystickButton7);
     }
 
     void PlayerDeath()
@@ -41,10 +46,18 @@ public class LevelController : MonoBehaviour
 
     void BecomePaused()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (StartPressed == true)
         {
+            C_start = true;
             Pause.SetActive(true);
             Time.timeScale = 0.5f;
         }
+        if (StartPressed == true && C_start == true)
+        {
+            C_start = false;
+            Pause.SetActive(false);
+            Time.timeScale = 1;
+        }
+
     }
 }

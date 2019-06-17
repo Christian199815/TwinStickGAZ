@@ -17,12 +17,15 @@ public class HomeController : MonoBehaviour
     [SerializeField] private GameObject LevelSelect;
     [SerializeField] private float speed;
 
- 
 
 
-    
+    private void Start()
+    {
+        transform.position = Select[0].position;
+    }
 
-    
+
+
     void Update()
     {
         LiftSelect();
@@ -52,6 +55,7 @@ public class HomeController : MonoBehaviour
         }
         if (position == 1)
         {
+            
             Lift.position = Vector3.MoveTowards(Lift.position, Select[1].position, speed * Time.deltaTime);
         }
         if (position == 2)
@@ -72,11 +76,11 @@ public class HomeController : MonoBehaviour
     {
         if(position <= 0)
         {
-            position = 4;
-        }
-        if(position >= 5)
-        {
             position = 1;
+        }
+        else if(position >= 4)
+        {
+            position = 4;
         }
     }
     //selectie
