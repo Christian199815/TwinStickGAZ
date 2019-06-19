@@ -1,17 +1,14 @@
 fileFormatVersion: 2
-guid: b202a02cf5b40a54db6c7c652ab1f2ed
+guid: 7fd9b8ce7898a974e919a3c6f8359073
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert4
-    2300000: polySurface120
-    2300002: //RootNode
-    3300000: polySurface120
-    3300002: //RootNode
-    4300000: polySurface120
-    4300002: doorframe
+    2100000: lambert2
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Stalagtiet_d
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,7 +60,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
