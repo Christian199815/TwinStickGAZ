@@ -1,17 +1,36 @@
 fileFormatVersion: 2
-guid: b202a02cf5b40a54db6c7c652ab1f2ed
+guid: 8070cddb6cceefb4cbb97619a651da2c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert4
-    2300000: polySurface120
-    2300002: //RootNode
-    3300000: polySurface120
-    3300002: //RootNode
-    4300000: polySurface120
-    4300002: doorframe
+    100000: rock_above
+    100002: rock_bottom
+    100004: rock_middle
+    100006: rock_not_so_above
+    100008: rock_not_so_bottom
+    100010: //RootNode
+    400000: rock_above
+    400002: rock_bottom
+    400004: rock_middle
+    400006: rock_not_so_above
+    400008: rock_not_so_bottom
+    400010: //RootNode
+    2100000: lambert3
+    2300000: rock_above
+    2300002: rock_bottom
+    2300004: rock_middle
+    2300006: rock_not_so_above
+    2300008: rock_not_so_bottom
+    3300000: rock_above
+    3300002: rock_bottom
+    3300004: rock_middle
+    3300006: rock_not_so_above
+    3300008: rock_not_so_bottom
+    4300000: rock_bottom
+    4300002: rock_not_so_bottom
+    4300004: rock_middle
+    4300006: rock_not_so_above
+    4300008: rock_above
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,7 +82,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
