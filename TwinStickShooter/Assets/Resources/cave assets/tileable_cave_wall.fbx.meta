@@ -1,58 +1,14 @@
 fileFormatVersion: 2
-guid: dcc69630429727a40935adbde6ec1fb2
+guid: bf6cabff256890a44989f287ff8454ee
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cabin
-    100002: Door
-    100004: //RootNode
-    100006: Frame
-    100008: pCube5
-    100010: pCube6
-    100012: pCube7
-    100014: pCube8
-    100016: pCylinder1
-    100018: pCylinder2
-    400000: Cabin
-    400002: Door
-    400004: //RootNode
-    400006: Frame
-    400008: pCube5
-    400010: pCube6
-    400012: pCube7
-    400014: pCube8
-    400016: pCylinder1
-    400018: pCylinder2
-    2100000: blinn1
-    2100002: lambert1
-    2100004: lambert6
-    2100006: lambert7
-    2300000: Cabin
-    2300002: Frame
-    2300004: pCube5
-    2300006: pCube6
-    2300008: pCube7
-    2300010: pCube8
-    2300012: pCylinder1
-    2300014: pCylinder2
-    3300000: Cabin
-    3300002: Frame
-    3300004: pCube5
-    3300006: pCube6
-    3300008: pCube7
-    3300010: pCube8
-    3300012: pCylinder1
-    3300014: pCylinder2
-    4300000: Frame
-    4300002: Cabin
-    4300004: pCube5
-    4300006: pCube8
-    4300008: pCube7
-    4300010: pCube6
-    4300012: pCylinder1
-    4300014: pCylinder2
-    7400000: Take 001
-    9500000: //RootNode
+    100000: //RootNode
+    400000: //RootNode
+    2100000: stone_slab
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: tileable_cave_wall
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -104,9 +60,9 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -133,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
