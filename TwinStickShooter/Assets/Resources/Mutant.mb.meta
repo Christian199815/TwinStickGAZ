@@ -1,14 +1,88 @@
 fileFormatVersion: 2
-guid: 50865a8051a46f149aa01bf4b37b95ce
+guid: ecdfb3991eba32d4cb66cdd93020d563
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert5
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Desk_Straight
+    100000: Body
+    100002: Boulder1
+    100004: Boulder2
+    100006: Boulder_3
+    100008: group1
+    100010: Head
+    100012: Left_Arm
+    100014: Left_Foot
+    100016: Left_Hand
+    100018: Left_Hip
+    100020: Left_Leg
+    100022: //RootNode
+    100024: Right_Arm
+    100026: Right_Foot
+    100028: Right_Hand
+    100030: Right_Hip
+    100032: Right_Leg
+    400000: Body
+    400002: Boulder1
+    400004: Boulder2
+    400006: Boulder_3
+    400008: group1
+    400010: Head
+    400012: Left_Arm
+    400014: Left_Foot
+    400016: Left_Hand
+    400018: Left_Hip
+    400020: Left_Leg
+    400022: //RootNode
+    400024: Right_Arm
+    400026: Right_Foot
+    400028: Right_Hand
+    400030: Right_Hip
+    400032: Right_Leg
+    2100000: lambert2
+    2300000: Body
+    2300002: Boulder1
+    2300004: Boulder2
+    2300006: Boulder_3
+    2300008: Head
+    2300010: Left_Arm
+    2300012: Left_Foot
+    2300014: Left_Hand
+    2300016: Left_Hip
+    2300018: Left_Leg
+    2300020: Right_Arm
+    2300022: Right_Foot
+    2300024: Right_Hand
+    2300026: Right_Hip
+    2300028: Right_Leg
+    3300000: Body
+    3300002: Boulder1
+    3300004: Boulder2
+    3300006: Boulder_3
+    3300008: Head
+    3300010: Left_Arm
+    3300012: Left_Foot
+    3300014: Left_Hand
+    3300016: Left_Hip
+    3300018: Left_Leg
+    3300020: Right_Arm
+    3300022: Right_Foot
+    3300024: Right_Hand
+    3300026: Right_Hip
+    3300028: Right_Leg
+    4300000: Boulder1
+    4300002: Boulder2
+    4300004: Boulder_3
+    4300006: Left_Hip
+    4300008: Left_Leg
+    4300010: Right_Hip
+    4300012: Right_Leg
+    4300014: Left_Foot
+    4300016: Right_Foot
+    4300018: Head
+    4300020: Body
+    4300022: Right_Arm
+    4300024: Left_Arm
+    4300026: Right_Hand
+    4300028: Left_Hand
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +114,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 8
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -60,7 +134,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:

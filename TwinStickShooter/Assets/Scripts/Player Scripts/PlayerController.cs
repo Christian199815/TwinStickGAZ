@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public static PlayerController Instance { get; private set; }
     // Components
     private Rigidbody rb;
 
@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         weapons.SetInstance();
     }
 
