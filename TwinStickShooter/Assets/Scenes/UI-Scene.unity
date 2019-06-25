@@ -474,19 +474,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Select:
-  - {fileID: 1243789058}
+  - {fileID: 0}
   - {fileID: 537791656}
   - {fileID: 582174971}
   - {fileID: 941705455}
   - {fileID: 217817594}
   Lift: {fileID: 1565076856}
   position: 0
-  up: 273
-  down: 274
-  Enter: 32
+  up: 119
+  down: 115
+  Enter: 13
   Home: {fileID: 2103853502}
-  Credits: {fileID: 1161113963}
-  LevelSelect: {fileID: 141992698}
+  Credits: {fileID: 0}
+  LevelSelect: {fileID: 0}
   speed: 6
 --- !u!1 &348612516
 GameObject:
@@ -549,7 +549,7 @@ PrefabInstance:
     - target: {fileID: 4285172323128498026, guid: dc70f6dab6f20e14bb0e5beaefcc3df7,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4285172323128498029, guid: dc70f6dab6f20e14bb0e5beaefcc3df7,
         type: 3}
@@ -880,7 +880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &641088196
 Transform:
   m_ObjectHideFlags: 0
@@ -2235,7 +2235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2103853503
 Transform:
   m_ObjectHideFlags: 0

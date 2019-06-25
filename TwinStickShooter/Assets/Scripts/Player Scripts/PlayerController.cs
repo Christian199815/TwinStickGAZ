@@ -160,7 +160,7 @@ public class PlayerController : MonoBehaviour
 
         //if(Time.)
 
-        statistics.SaveToPrefs();
+        //statistics.SaveToPrefs();
     }
 
     private void OnDrawGizmosSelected()
