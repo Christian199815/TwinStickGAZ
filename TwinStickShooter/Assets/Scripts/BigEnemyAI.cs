@@ -19,12 +19,16 @@ public class BigEnemyAI : MonoBehaviour
     [Header("Enemy Sight")]
     public float fovAngle = 110f;
     public bool playerInSight = false;
+    public bool playerWasInSight = false;
+    public Vector3 PlayerPosition;
 
     public Vector3 closestPoi;
+    public float xAngle, yAngle, zAngle;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.autoBraking = false;
         playerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         col = GetComponent<SphereCollider>();
 
@@ -37,7 +41,7 @@ public class BigEnemyAI : MonoBehaviour
 
         if(new Vector3(Mathf.Round(transform.position.x), 0, Mathf.Round(transform.position.z)) == agent.destination.Round() || curPoi != closestPoi)
         {
-            Start:
+            //Start:
 
             closestPoi = curPoi;
             destination = closestPoi + new Vector3(Random.Range(-radius, radius), 2, Random.Range(-radius, radius));
@@ -47,10 +51,34 @@ public class BigEnemyAI : MonoBehaviour
             //    goto Start;
         }
 
-        if(playerInSight)
+        if (playerInSight)
+        {
             agent.destination = player.position;
+        }
+        else if (((agent.transform.position.x - player.position.x) > col.radius) && (agent.transform.position.x - player.position.x) < (col.radius + 20))
+        {
+            playerWasInSight = true;
+            LookAround();
+        }
+        else if (((agent.transform.position.z - player.position.z) > col.radius) && (agent.transform.position.z - player.position.z) < (col.radius + 20))
+        {
+            playerWasInSight = true;
+            LookAround();
+        }
         else
             agent.destination = destination;
+
+        Debug.Log(playerWasInSight);
+    }
+
+    private void LookAround()
+    {
+        agent.isStopped = true;
+        agent.transform.Rotate(0f, 260f, 0f, Space.Self);
+        agent.transform.Rotate(0f, 15f, 0f, Space.Self);
+
+        agent.destination = destination;
+        playerWasInSight = false;
     }
 
     private void OnDrawGizmosSelected()
@@ -90,6 +118,8 @@ public class BigEnemyAI : MonoBehaviour
                         playerInSight = true;
                     }
                 }
+
+           
             }
         }
     }
