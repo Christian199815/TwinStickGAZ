@@ -64,6 +64,7 @@ ModelImporter:
     100116: transform66
     100118: vines
     100120: water_plane
+    100122: floor_tile1
     400000: aquarium
     400002: crystal_large
     400004: crystal_medium
@@ -125,6 +126,7 @@ ModelImporter:
     400116: transform66
     400118: vines
     400120: water_plane
+    400122: floor_tile1
     2100000: stone_slab
     2100002: lambert3
     2100004: garden
@@ -165,6 +167,7 @@ ModelImporter:
     2300050: tileable_cave_wall
     2300052: vines
     2300054: water_plane
+    2300056: floor_tile1
     3300000: aquarium
     3300002: crystal_large
     3300004: crystal_medium
@@ -193,6 +196,7 @@ ModelImporter:
     3300050: tileable_cave_wall
     3300052: vines
     3300054: water_plane
+    3300056: floor_tile1
     4300000: slab_medium
     4300002: slab_small
     4300004: slab_large
@@ -221,6 +225,7 @@ ModelImporter:
     4300050: Stalagtiet_aa
     4300052: polySurface47
     4300054: pCylinder26
+    4300056: floor_tile1
     10800000: pointLight2
   externalObjects: {}
   materials:
