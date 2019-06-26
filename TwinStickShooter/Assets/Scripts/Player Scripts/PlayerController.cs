@@ -24,10 +24,11 @@ public class PlayerController : MonoBehaviour
     // Player Variables
     [Header("Player Movement")]
     public float movementSpeed = 2.0f;
-    public LayerMask rayMask;
+    public float rotationDamp = .75f;
+    private Vector3 rotation;
 
     [Header("Camera Settings")]
-    private Camera gameCamera;
+    private Transform gameCamera;
     public float cameraSmooth = .2f;
     public Vector3 cameraOffset;
 
@@ -49,6 +50,12 @@ public class PlayerController : MonoBehaviour
     public bool healthCheat;
     public List<int> keycards;
 
+    [Header("Lighting")]
+    public float radius = 10;
+    public int rays = 180;
+    private Vector2[] meshVerts;
+    private MeshFilter lightLayer;
+
     //Lerp Variables
     private float lerpHealth;
     private float lerpArmor;
@@ -62,7 +69,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        gameCamera = Camera.main;
+        gameCamera = GameObject.Find("Cameras").transform;
 
         currentWeapon = weapons.weapons[0];
         currentWeapon.curAmmo = currentWeapon.maxAmmo;
@@ -84,17 +91,22 @@ public class PlayerController : MonoBehaviour
         statText = GameObject.Find("Stats Text").GetComponent<Text>();
 
         statistics = new PlayerStats();
+
+        meshVerts = new Vector2[rays];
+        lightLayer = GameObject.Find("LightLayer").GetComponent<MeshFilter>();
     }
 
     void FixedUpdate()
     {
         #region Movement
-        // Casting a ray to mouse position, then setting the rotation to the point of the hit and reseting the rotational values on the X and Z axis
-        Ray mouseRay = gameCamera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        Physics.Raycast(mouseRay, out hit, 100, rayMask);
-        transform.LookAt(hit.point);
-        transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));
+        
+        if(Input.GetAxis("RHorizontal") != 0.0f || Input.GetAxis("RVertical") != 0.0f)
+        {
+            rotation = new Vector3(Input.GetAxis("RHorizontal"), transform.forward.y, -Input.GetAxisRaw("RVertical"));
+        }
+
+        transform.forward = Vector3.Lerp(transform.forward, rotation, rotationDamp);
+        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
 
         // Setting the movement of the player using the rigidbody
         rb.velocity = new Vector3(movementSpeed * Input.GetAxisRaw("Horizontal"), 0, movementSpeed * Input.GetAxisRaw("Vertical"));
@@ -105,7 +117,7 @@ public class PlayerController : MonoBehaviour
 
         #region Shooting
         // Checking if the player tries to shoot and he is not reloading
-        if (Input.GetMouseButton(0) && shootTimer > currentWeapon.shootDelay && reloadTimer > currentWeapon.reloadDelay)
+        if (Input.GetButton("Fire") && shootTimer > currentWeapon.shootDelay && reloadTimer > currentWeapon.reloadDelay)
         {
             // Instantiating the bullet at the position of the player
 
@@ -155,6 +167,51 @@ public class PlayerController : MonoBehaviour
         weaponText.text = currentWeapon.weaponName;
         #endregion
 
+        #region Lighting
+        for (int i = 0; i < rays; i++)
+        {
+            float stepSize = 360f / rays;
+
+            Vector3 dir = Quaternion.Euler(0, 360 - (i * stepSize), 0) * Vector3.right * radius;
+
+            float angle = (i * stepSize * Mathf.PI / 180f);
+            float x = Mathf.Cos(angle) * radius;
+            float y = Mathf.Sin(angle) * radius;
+
+            Ray ray = new Ray(transform.position, dir);
+            RaycastHit hit;
+
+            if(Physics.Raycast(ray, out hit, radius))
+            {
+                meshVerts[i] = hit.point.Convert2D();
+            }
+            else
+            {
+                meshVerts[i] = new Vector2(x, y) + transform.position.Convert2D();
+            }
+
+            //Debug.DrawRay(transform.position, Quaternion.Euler(0, i * 360 / rays, 0) * Vector3.forward * radius);
+        }
+
+        Triangulator tr = new Triangulator(meshVerts);
+        int[] indices = tr.Triangulate();
+
+        Vector3[] vertices = new Vector3[meshVerts.Length];
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            vertices[i] = new Vector3(meshVerts[i].x, meshVerts[i].y, 0);
+        }
+
+        Mesh msh = new Mesh();
+        msh.vertices = vertices;
+        msh.triangles = indices;
+        msh.RecalculateNormals();
+        msh.RecalculateBounds();
+
+        lightLayer.mesh = msh;
+
+        #endregion
+
         statistics.timePlayed += Time.deltaTime;
 
         statText.text = "Score: " + statistics.score + "\n" + "Times Player: " + statistics.timesDied + "\n" + "Play Time: " + ((int)(statistics.timePlayed / 60.0f / 60.0f) + ":" + (int)((statistics.timePlayed / 60.0f) % 60) + ":" + (int)(statistics.timePlayed % 60));
@@ -176,6 +233,15 @@ public class PlayerController : MonoBehaviour
         {
             Gizmos.DrawSphere(shootPoint.position, .05f);
         }
+
+        //for (int i = 0; i < meshVerts.Length; i++)
+        //{
+        //    Gizmos.color = Color.red;
+        //    Gizmos.DrawSphere(meshVerts[i].Convert3D(2), .2f);
+        //    Gizmos.color = Color.white;
+        //    Gizmos.DrawLine(transform.position,meshVerts[i].Convert3D(2));
+        //}
+
     }
 
     // Functions
@@ -197,7 +263,6 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                print("wiwiwiwiwi");
                 return false;
             }
         }
