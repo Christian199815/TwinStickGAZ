@@ -1,78 +1,14 @@
 fileFormatVersion: 2
-guid: cb77e84d6f2996240aed11d1e30e717b
+guid: dc27d42a965c9c642a41088720717ece
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: pasted__Wall
-    100002: pasted__Wall2
-    100004: Poster_1
-    100006: Poster_2
-    100008: Poster_3
-    100010: TV
-    100012: //RootNode
-    100014: DataBank_1
-    100016: DataBank_1 1
-    100018: DataBank_2
-    100020: DataBank_3
-    100022: DataBank_3 1
-    100024: Glass_1
-    100026: Glass_2
-    100028: pasted__Wall3
-    400000: pasted__Wall
-    400002: pasted__Wall2
-    400004: Poster_1
-    400006: Poster_2
-    400008: Poster_3
-    400010: TV
-    400012: //RootNode
-    400014: DataBank_1
-    400016: DataBank_1 1
-    400018: DataBank_2
-    400020: DataBank_3
-    400022: DataBank_3 1
-    400024: Glass_1
-    400026: Glass_2
-    400028: pasted__Wall3
-    2100000: lambert3
-    2100002: lambert1
-    2100004: blinn1
-    2100006: lambert4
-    2300000: pasted__Wall
-    2300002: pasted__Wall2
-    2300004: Poster_1
-    2300006: Poster_2
-    2300008: Poster_3
-    2300010: TV
-    2300012: DataBank_1 1
-    2300014: DataBank_2
-    2300016: DataBank_3 1
-    2300018: Glass_1
-    2300020: Glass_2
-    2300022: pasted__Wall3
-    3300000: pasted__Wall
-    3300002: pasted__Wall2
-    3300004: Poster_1
-    3300006: Poster_2
-    3300008: Poster_3
-    3300010: TV
-    3300012: DataBank_1 1
-    3300014: DataBank_2
-    3300016: DataBank_3 1
-    3300018: Glass_1
-    3300020: Glass_2
-    3300022: pasted__Wall3
-    4300000: TV
-    4300002: pasted__Wall2
-    4300004: pasted__Wall
-    4300006: Poster_1
-    4300008: Poster_2
-    4300010: Poster_3
-    4300012: pasted__Wall3
-    4300014: Glass_1
-    4300016: DataBank_1
-    4300018: DataBank_2
-    4300020: Glass_2
-    4300022: DataBank_3
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Texture_Bed
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: "Bed_with_l\xE4mps"
   externalObjects: {}
   materials:
     importMaterials: 1
