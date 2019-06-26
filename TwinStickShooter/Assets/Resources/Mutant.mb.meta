@@ -20,6 +20,19 @@ ModelImporter:
     100028: Right_Hand
     100030: Right_Hip
     100032: Right_Leg
+    100034: Body 1
+    100036: Head 1
+    100038: Left_Arm 1
+    100040: Left_Foot 1
+    100042: Left_Hand 1
+    100044: Left_Hip 1
+    100046: Left_Leg 1
+    100048: Mutant
+    100050: Right_Arm 1
+    100052: Right_Foot 1
+    100054: Right_Hand 1
+    100056: Right_Hip 1
+    100058: Right_Leg 1
     400000: Body
     400002: Boulder1
     400004: Boulder2
@@ -37,6 +50,19 @@ ModelImporter:
     400028: Right_Hand
     400030: Right_Hip
     400032: Right_Leg
+    400034: Body 1
+    400036: Head 1
+    400038: Left_Arm 1
+    400040: Left_Foot 1
+    400042: Left_Hand 1
+    400044: Left_Hip 1
+    400046: Left_Leg 1
+    400048: Mutant
+    400050: Right_Arm 1
+    400052: Right_Foot 1
+    400054: Right_Hand 1
+    400056: Right_Hip 1
+    400058: Right_Leg 1
     2100000: lambert2
     2300000: Body
     2300002: Boulder1
@@ -53,6 +79,18 @@ ModelImporter:
     2300024: Right_Hand
     2300026: Right_Hip
     2300028: Right_Leg
+    2300030: Body 1
+    2300032: Head 1
+    2300034: Left_Arm 1
+    2300036: Left_Foot 1
+    2300038: Left_Hand 1
+    2300040: Left_Hip 1
+    2300042: Left_Leg 1
+    2300044: Right_Arm 1
+    2300046: Right_Foot 1
+    2300048: Right_Hand 1
+    2300050: Right_Hip 1
+    2300052: Right_Leg 1
     3300000: Body
     3300002: Boulder1
     3300004: Boulder2
@@ -68,6 +106,18 @@ ModelImporter:
     3300024: Right_Hand
     3300026: Right_Hip
     3300028: Right_Leg
+    3300030: Body 1
+    3300032: Head 1
+    3300034: Left_Arm 1
+    3300036: Left_Foot 1
+    3300038: Left_Hand 1
+    3300040: Left_Hip 1
+    3300042: Left_Leg 1
+    3300044: Right_Arm 1
+    3300046: Right_Foot 1
+    3300048: Right_Hand 1
+    3300050: Right_Hip 1
+    3300052: Right_Leg 1
     4300000: Boulder1
     4300002: Boulder2
     4300004: Boulder_3
@@ -83,6 +133,18 @@ ModelImporter:
     4300024: Left_Arm
     4300026: Right_Hand
     4300028: Left_Hand
+    4300030: Left_Hip
+    4300032: Left_Leg
+    4300034: Right_Hip
+    4300036: Right_Leg
+    4300038: Left_Foot
+    4300040: Right_Foot
+    4300042: Head
+    4300044: Body
+    4300046: Right_Arm
+    4300048: Left_Arm
+    4300050: Right_Hand
+    4300052: Left_Hand
   externalObjects: {}
   materials:
     importMaterials: 1
