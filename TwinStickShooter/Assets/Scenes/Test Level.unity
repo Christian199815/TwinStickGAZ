@@ -9842,7 +9842,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.67
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -9924,13 +9924,11 @@ MonoBehaviour:
   - {x: -146.45, y: 2, z: 66}
   - {x: -270, y: 2, z: 56.49}
   fovAngle: 110
-  playerInSight: 0
+  FollowingPlayer: 0
   playerWasInSight: 0
   PlayerPosition: {x: 0, y: 0, z: 0}
   closestPoi: {x: 0, y: 2, z: 0}
-  xAngle: 0
-  yAngle: 0
-  zAngle: 0
+  Health: 30
 --- !u!195 &1002412228
 NavMeshAgent:
   m_ObjectHideFlags: 0
