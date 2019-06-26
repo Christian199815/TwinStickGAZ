@@ -66,7 +66,7 @@ public class MutantAI : MonoBehaviour
     void Attack()
     {
         HitTime = Time.time;
-        PlayerController.Instance.currentHealth -= 10;
+        
     }
 
     void LookatTarget()
@@ -86,11 +86,18 @@ public class MutantAI : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.transform.tag == "Player")
+        {
+            PlayerController.Instance.currentHealth -= 10;
+        }
+
         if(collision.transform.tag == "Bullet")
         {
             Health -= 10;
         }
     }
+
+    
 
     void Die()
     {

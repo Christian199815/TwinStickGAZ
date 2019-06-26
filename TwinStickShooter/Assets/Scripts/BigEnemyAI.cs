@@ -13,21 +13,27 @@ public class BigEnemyAI : MonoBehaviour
     public float radius;
     private Vector3 destination;
     private Ray ray;
+    private Vector3 euler;
 
     public List<Vector3> idlePoints;
 
     [Header("Enemy Sight")]
-    public float fovAngle = 110f;
-    public bool playerInSight = false;
+    public float fovAngle = 170f;
+    public bool FollowingPlayer = false;
+    public bool playerWasInSight = false;
+    public Vector3 PlayerPosition;
 
     public Vector3 closestPoi;
+    public int Health = 30; 
+    
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.autoBraking = false;
         playerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         col = GetComponent<SphereCollider>();
-
+        euler = new Vector3(transform.eulerAngles.x, 360f, transform.eulerAngles.z);
         player = playerScript.transform;
     }
 
@@ -35,9 +41,25 @@ public class BigEnemyAI : MonoBehaviour
     {
         Vector3 curPoi = GetClosestPoI(player);
 
-        if(new Vector3(Mathf.Round(transform.position.x), 0, Mathf.Round(transform.position.z)) == agent.destination.Round() || curPoi != closestPoi)
+        if (new Vector3(Mathf.Round(transform.position.x), 0, Mathf.Round(transform.position.z)) == agent.destination.Round() || curPoi != closestPoi)
         {
-            Start:
+            if(FollowingPlayer)
+            {
+                float timer = 0;
+                if (timer > 5)
+                {
+                    agent.GetComponent<NavMeshAgent>().speed = 0;
+                    timer = 0;
+                }   
+                else
+                    timer++ ;
+               
+                FollowingPlayer = false;
+            }
+            else
+            {
+                agent.GetComponent<NavMeshAgent>().speed = 3.5f;
+            }
 
             closestPoi = curPoi;
             destination = closestPoi + new Vector3(Random.Range(-radius, radius), 2, Random.Range(-radius, radius));
@@ -47,11 +69,18 @@ public class BigEnemyAI : MonoBehaviour
             //    goto Start;
         }
 
-        if(playerInSight)
-            agent.destination = player.position;
-        else
-            agent.destination = destination;
+
+
+     
+        agent.destination = destination;
+
+
+
     }
+
+  
+
+    
 
     private void OnDrawGizmosSelected()
     {
@@ -59,7 +88,7 @@ public class BigEnemyAI : MonoBehaviour
         {
             Gizmos.color = Color.yellow;
 
-            if(pos == closestPoi)
+            if (pos == closestPoi)
             {
                 Gizmos.color = Color.green;
             }
@@ -72,9 +101,9 @@ public class BigEnemyAI : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.name == "Player")
+        if (other.name == "Player")
         {
-            playerInSight = false;
+            //FollowingPlayer = false;
 
             Vector3 direction = player.position - transform.position;
             float angle = Vector3.Angle(direction, transform.forward);
@@ -85,14 +114,29 @@ public class BigEnemyAI : MonoBehaviour
 
                 if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius))
                 {
-                    if(hit.collider.name == "Player")
+                    if (hit.collider.name == "Player")
                     {
-                        playerInSight = true;
+                        FollowingPlayer = true;
+                        destination = player.position;
                     }
                 }
+
+
             }
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.transform.tag == ("Player"))
+        {
+            Debug.Log("Au, je doet me pijn");
+            PlayerController.Instance.currentHealth -= 20;
+        }
+        
+    }
+
+    
 
     /// <summary>
     /// Gets all points of interests and looks at which is the closest to the object
@@ -103,11 +147,11 @@ public class BigEnemyAI : MonoBehaviour
         float closestDistance = 999;
         Vector3 closestPoint = new Vector3();
 
-        foreach(Vector3 pos in idlePoints)
+        foreach (Vector3 pos in idlePoints)
         {
             float distance = Mathf.Abs(Vector3.Distance(obj.position, pos));
 
-            if(distance < closestDistance)
+            if (distance < closestDistance)
             {
                 closestDistance = distance;
                 closestPoint = pos;

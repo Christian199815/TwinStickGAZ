@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour
         lerpHealth = Mathf.Lerp(lerpHealth, currentHealth, .25f);
         lerpArmor = Mathf.Lerp(lerpArmor, currentArmor, .25f);
 
-        healthbar.sizeDelta = new Vector2(lerpHealth * 48 ,healthbar.sizeDelta.y);
+        healthbar.sizeDelta = new Vector2(lerpHealth * 48 ,healthbar.sizeDelta.y); 
         armorbar.sizeDelta = new Vector2(lerpArmor * 45 ,healthbar.sizeDelta.y);
 
         healthText.text = Mathf.Round((100.0f / maxHealth) * lerpHealth) + "%";

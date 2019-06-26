@@ -66,43 +66,40 @@ public class HomeController : MonoBehaviour
         {
             Lift.position = Vector3.MoveTowards(Lift.position, Select[3].position, speed * Time.deltaTime);
         }
-        if (position == 4)
-        {
-            Lift.position = Vector3.MoveTowards(Lift.position, Select[4].position, speed * Time.deltaTime);
-        }
+        
     }
     //veiligheid
     void BeloworAbove()
     {
-        if(position <= 0)
+        if(position <= -1)
         {
-            position = 1;
+            position = 0;
         }
         else if(position >= 4)
         {
-            position = 4;
+            position = 3;
         }
     }
     //selectie
     void ContinueSelection()
     {
-        if(Lift.position == Select[1].position && Input.GetKeyDown(Enter))
+        if(Lift.position == Select[0].position && Input.GetKeyDown(Enter))
         {
             SceneManager.LoadScene(1);
         }
-        if (Lift.position == Select[2].position && Input.GetKeyDown(Enter))
+        if (Lift.position == Select[1].position && Input.GetKeyDown(Enter))
         {
             print("level");
             LevelSelect.SetActive(true);
             Home.SetActive(false);
         }
-        if (Lift.position == Select[3].position && Input.GetKeyDown(Enter))
+        if (Lift.position == Select[2].position && Input.GetKeyDown(Enter))
         {
             print("options");
             Credits.SetActive(true);
             Home.SetActive(false);
         }
-        if (Lift.position == Select[4].position && Input.GetKeyDown(Enter))
+        if (Lift.position == Select[3].position && Input.GetKeyDown(Enter))
         {
             print("quit");
             Application.Quit();
