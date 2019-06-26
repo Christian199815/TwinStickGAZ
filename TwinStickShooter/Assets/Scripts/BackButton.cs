@@ -12,6 +12,6 @@ public class BackButton : MonoBehaviour
     {
         Home.SetActive(true);
         Credits.SetActive(false);
-        LevelSelect.SetActive(false);
+        
     }
 }
