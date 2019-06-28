@@ -10265,8 +10265,11 @@ MonoBehaviour:
   - {x: -146.45, y: 2, z: 66}
   - {x: -270, y: 2, z: 56.49}
   fovAngle: 110
-  playerInSight: 0
+  FollowingPlayer: 0
+  playerWasInSight: 0
+  PlayerPosition: {x: 0, y: 0, z: 0}
   closestPoi: {x: 0, y: 2, z: 0}
+  Health: 30
 --- !u!195 &1002412228
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18525,30 +18528,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1711813646, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
-      propertyPath: m_Name
-      value: Stats Text
-      objectReference: {fileID: 0}
-    - target: {fileID: 1711813647, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 61.55005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1711813647, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 123.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1711813647, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 331.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1711813648, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}
-      propertyPath: m_Text
-      value: 'Score: 420
-
-        Times died: 420
-
-        Time played: 0:0:0'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0f431487d62ae54eb728ab06ac94ea2, type: 3}

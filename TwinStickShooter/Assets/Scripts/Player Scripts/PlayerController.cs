@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        gameCamera = GameObject.Find("Cameras").transform;
+        gameCamera = GameObject.Find("Main Camera").transform;
 
         currentWeapon = weapons.weapons[0];
         currentWeapon.curAmmo = currentWeapon.maxAmmo;
@@ -91,9 +91,6 @@ public class PlayerController : MonoBehaviour
         statText = GameObject.Find("Stats Text").GetComponent<Text>();
 
         statistics = new PlayerStats();
-
-        meshVerts = new Vector2[rays];
-        lightLayer = GameObject.Find("LightLayer").GetComponent<MeshFilter>();
     }
 
     void FixedUpdate()
@@ -109,10 +106,10 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
 
         // Setting the movement of the player using the rigidbody
-        rb.velocity = new Vector3(movementSpeed * Input.GetAxisRaw("Horizontal"), 0, movementSpeed * Input.GetAxisRaw("Vertical"));
+        //rb.velocity = 
 
         // Camera movement by lerping between the camera position and the player position + the offset
-        gameCamera.transform.position = Vector3.Lerp(gameCamera.transform.position, new Vector3(transform.position.x + cameraOffset.x, transform.position.y + cameraOffset.y, transform.position.z + cameraOffset.z), cameraSmooth);
+        gameCamera.transform.position += new Vector3(movementSpeed * Input.GetAxisRaw("Horizontal"), 0, movementSpeed * Input.GetAxisRaw("Vertical"));
         #endregion
 
         #region Shooting
@@ -168,47 +165,47 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region Lighting
-        for (int i = 0; i < rays; i++)
-        {
-            float stepSize = 360f / rays;
+        //for (int i = 0; i < rays; i++)
+        //{
+        //    float stepSize = 360f / rays;
 
-            Vector3 dir = Quaternion.Euler(0, 360 - (i * stepSize), 0) * Vector3.right * radius;
+        //    Vector3 dir = Quaternion.Euler(0, 360 - (i * stepSize), 0) * Vector3.right * radius;
 
-            float angle = (i * stepSize * Mathf.PI / 180f);
-            float x = Mathf.Cos(angle) * radius;
-            float y = Mathf.Sin(angle) * radius;
+        //    float angle = (i * stepSize * Mathf.PI / 180f);
+        //    float x = Mathf.Cos(angle) * radius;
+        //    float y = Mathf.Sin(angle) * radius;
 
-            Ray ray = new Ray(transform.position, dir);
-            RaycastHit hit;
+        //    Ray ray = new Ray(transform.position, dir);
+        //    RaycastHit hit;
 
-            if(Physics.Raycast(ray, out hit, radius))
-            {
-                meshVerts[i] = hit.point.Convert2D();
-            }
-            else
-            {
-                meshVerts[i] = new Vector2(x, y) + transform.position.Convert2D();
-            }
+        //    if(Physics.Raycast(ray, out hit, radius))
+        //    {
+        //        meshVerts[i] = hit.point.Convert2D();
+        //    }
+        //    else
+        //    {
+        //        meshVerts[i] = new Vector2(x, y) + transform.position.Convert2D();
+        //    }
 
-            //Debug.DrawRay(transform.position, Quaternion.Euler(0, i * 360 / rays, 0) * Vector3.forward * radius);
-        }
+        //    //Debug.DrawRay(transform.position, Quaternion.Euler(0, i * 360 / rays, 0) * Vector3.forward * radius);
+        //}
 
-        Triangulator tr = new Triangulator(meshVerts);
-        int[] indices = tr.Triangulate();
+        //Triangulator tr = new Triangulator(meshVerts);
+        //int[] indices = tr.Triangulate();
 
-        Vector3[] vertices = new Vector3[meshVerts.Length];
-        for (int i = 0; i < vertices.Length; i++)
-        {
-            vertices[i] = new Vector3(meshVerts[i].x, meshVerts[i].y, 0);
-        }
+        //Vector3[] vertices = new Vector3[meshVerts.Length];
+        //for (int i = 0; i < vertices.Length; i++)
+        //{
+        //    vertices[i] = new Vector3(meshVerts[i].x, meshVerts[i].y, 0);
+        //}
 
-        Mesh msh = new Mesh();
-        msh.vertices = vertices;
-        msh.triangles = indices;
-        msh.RecalculateNormals();
-        msh.RecalculateBounds();
+        //Mesh msh = new Mesh();
+        //msh.vertices = vertices;
+        //msh.triangles = indices;
+        //msh.RecalculateNormals();
+        //msh.RecalculateBounds();
 
-        lightLayer.mesh = msh;
+        //lightLayer.mesh = msh;
 
         #endregion
 

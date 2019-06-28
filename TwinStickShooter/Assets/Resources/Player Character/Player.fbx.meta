@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: 922509295fb4ce54d83eb346b674b8b2
+guid: a2d4c16223b4c33409136d3e9249a3cf
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Texture_Kitchen
+    2100000: Texture_Character
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Counter_with_sink1
+    4300000: Player
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 1711813649}
   - component: {fileID: 1711813648}
   m_Layer: 5
-  m_Name: Stats
+  m_Name: Stats Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,8 +113,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 333, y: 44.4}
-  m_SizeDelta: {x: 662.5, y: 88.8}
+  m_AnchoredPosition: {x: 331.25, y: 61.55005}
+  m_SizeDelta: {x: 662.5, y: 123.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1711813649
 CanvasRenderer:
@@ -159,7 +159,9 @@ MonoBehaviour:
     m_LineSpacing: 1.5
   m_Text: 'Score: 420
 
-    Times died: 420'
+    Times died: 420
+
+    Time played: 0:0:0'
 --- !u!1 &6300852256828247968
 GameObject:
   m_ObjectHideFlags: 0
