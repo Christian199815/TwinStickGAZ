@@ -168,4 +168,14 @@ public static class VectorMath
     {
         return new Vector3(Mathf.Round(vec.x), Mathf.Round(vec.y), Mathf.Round(vec.z));
     }
+
+    public static Vector2 Convert2D(this Vector3 vec)
+    {
+        return new Vector2(vec.x, vec.z);
+    }
+
+    public static Vector3 Convert3D(this Vector2 vec, float y)
+    {
+        return new Vector3(vec.x, y, vec.y);
+    }
 }
